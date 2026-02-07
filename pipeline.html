@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pipeline Vendite — Print Solution</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            min-height: 100vh;
+            color: #fff;
+            overflow-x: auto;
+        }
+
+        /* Login Screen */
+        .login-screen {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .login-box {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(20px);
+            border-radius: 20px;
+            padding: 40px;
+            text-align: center;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .login-box h2 {
+            margin-bottom: 10px;
+            font-size: 24px;
+        }
+
+        .login-box p {
+            color: rgba(255,255,255,0.6);
+            margin-bottom: 25px;
+            font-size: 14px;
+        }
+
+        .login-box input {
+            width: 250px;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 10px;
+            background: rgba(255,255,255,0.15);
+            color: #fff;
+            font-size: 16px;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        .login-box input::placeholder {
+            color: rgba(255,255,255,0.5);
+        }
+
+        .login-box button {
+            width: 250px;
+            padding: 12px;
+            border: none;
+            border-radius: 10px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+
+        .login-box button:hover {
+            transform: scale(1.02);
+        }
+
+        .login-error {
+            color: #ff6b6b;
+            margin-top: 10px;
+            font-size: 14px;
+            display: none;
+        }
+
+        .hidden { display: none !important; }
+
+        /* Header */
+        header {
+            padding: 20px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .logo-icon {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+        }
+
+        .logo h1 {
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        .logo span {
+            color: rgba(255,255,255,0.5);
+            font-size: 14px;
+            font-weight: 400;
+        }
+
+        .header-stats {
+            display: flex;
+            gap: 30px;
+        }
+
+        .header-stat {
+            text-align: center;
+        }
+
+        .header-stat-value {
+            font-size: 24px;
+            font-weight: 700;
+        }
+
+        .header-stat-label {
+            font-size: 12px;
+            color: rgba(255,255,255,0.5);
+            text-transform: uppercase;
+        }
+
+        .header-stat.won .header-stat-value { color: #4ade80; }
+        .header-stat.pipeline .header-stat-value { color: #fbbf24; }
+        .header-stat.leads .header-stat-value { color: #60a5fa; }
+
+        /* Pipeline Container */
+        .pipeline-container {
+            display: flex;
+            gap: 16px;
+            padding: 20px 30px;
+            min-height: calc(100vh - 100px);
+            overflow-x: auto;
+        }
+
+        /* Pipeline Column */
+        .pipeline-column {
+            min-width: 300px;
+            max-width: 300px;
+            background: rgba(255,255,255,0.05);
+            border-radius: 16px;
+            display: flex;
+            flex-direction: column;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .column-header {
+            padding: 16px;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .column-title {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .column-icon {
+            width: 32px;
+            height: 32px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+        }
+
+        .column-name {
+            font-weight: 600;
+            font-size: 14px;
+        }
+
+        .column-count {
+            background: rgba(255,255,255,0.15);
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+        }
+
+        .column-value {
+            font-size: 11px;
+            color: rgba(255,255,255,0.5);
+            margin-top: 2px;
+        }
+
+        /* Column Colors */
+        .col-nuovo .column-icon { background: #3b82f6; }
+        .col-nuovo .column-count { background: rgba(59,130,246,0.3); color: #60a5fa; }
+
+        .col-qualificato .column-icon { background: #8b5cf6; }
+        .col-qualificato .column-count { background: rgba(139,92,246,0.3); color: #a78bfa; }
+
+        .col-demo .column-icon { background: #f59e0b; }
+        .col-demo .column-count { background: rgba(245,158,11,0.3); color: #fbbf24; }
+
+        .col-offerta .column-icon { background: #ec4899; }
+        .col-offerta .column-count { background: rgba(236,72,153,0.3); color: #f472b6; }
+
+        .col-negoziazione .column-icon { background: #14b8a6; }
+        .col-negoziazione .column-count { background: rgba(20,184,166,0.3); color: #2dd4bf; }
+
+        .col-vinto .column-icon { background: #22c55e; }
+        .col-vinto .column-count { background: rgba(34,197,94,0.3); color: #4ade80; }
+
+        .col-perso .column-icon { background: #ef4444; }
+        .col-perso .column-count { background: rgba(239,68,68,0.3); color: #f87171; }
+
+        /* Cards Container */
+        .cards-container {
+            flex: 1;
+            padding: 12px;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        /* Deal Card */
+        .deal-card {
+            background: rgba(255,255,255,0.08);
+            border-radius: 12px;
+            padding: 14px;
+            cursor: pointer;
+            transition: all 0.2s;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .deal-card:hover {
+            background: rgba(255,255,255,0.12);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+        }
+
+        .deal-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 10px;
+        }
+
+        .deal-company {
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 1.3;
+        }
+
+        .deal-value {
+            font-size: 13px;
+            font-weight: 700;
+            color: #4ade80;
+            white-space: nowrap;
+        }
+
+        .deal-contact {
+            font-size: 12px;
+            color: rgba(255,255,255,0.6);
+            margin-bottom: 8px;
+        }
+
+        .deal-product {
+            display: inline-block;
+            background: rgba(255,255,255,0.1);
+            padding: 4px 8px;
+            border-radius: 6px;
+            font-size: 11px;
+            margin-bottom: 10px;
+        }
+
+        .deal-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 10px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .deal-date {
+            font-size: 11px;
+            color: rgba(255,255,255,0.4);
+        }
+
+        .deal-priority {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+        }
+
+        .priority-hot { background: #ef4444; box-shadow: 0 0 8px #ef4444; }
+        .priority-warm { background: #f59e0b; box-shadow: 0 0 8px #f59e0b; }
+        .priority-cold { background: #3b82f6; }
+
+        /* Empty State */
+        .empty-state {
+            text-align: center;
+            padding: 30px 20px;
+            color: rgba(255,255,255,0.3);
+        }
+
+        .empty-state-icon {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        /* Add Button */
+        .add-deal-btn {
+            margin: 12px;
+            padding: 10px;
+            border: 2px dashed rgba(255,255,255,0.2);
+            border-radius: 10px;
+            background: transparent;
+            color: rgba(255,255,255,0.4);
+            cursor: pointer;
+            font-size: 13px;
+            transition: all 0.2s;
+        }
+
+        .add-deal-btn:hover {
+            border-color: rgba(255,255,255,0.4);
+            color: rgba(255,255,255,0.7);
+            background: rgba(255,255,255,0.05);
+        }
+
+        /* Scrollbar */
+        .cards-container::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        .cards-container::-webkit-scrollbar-track {
+            background: transparent;
+        }
+
+        .cards-container::-webkit-scrollbar-thumb {
+            background: rgba(255,255,255,0.2);
+            border-radius: 3px;
+        }
+
+        /* Last Updated */
+        .last-updated {
+            position: fixed;
+            bottom: 15px;
+            right: 20px;
+            font-size: 11px;
+            color: rgba(255,255,255,0.3);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .pipeline-column {
+                min-width: 280px;
+            }
+            .header-stats {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Login Screen -->
+    <div class="login-screen" id="loginScreen">
+        <div class="login-box">
+            <h2>🔐 Pipeline Vendite</h2>
+            <p>Print Solution S.r.l.</p>
+            <input type="password" id="passwordInput" placeholder="Password" onkeypress="if(event.key==='Enter')checkPassword()">
+            <br>
+            <button onclick="checkPassword()">Accedi</button>
+            <p class="login-error" id="loginError">Password errata</p>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content hidden" id="mainContent">
+        <header>
+            <div class="logo">
+                <div class="logo-icon">📊</div>
+                <div>
+                    <h1>Pipeline Vendite</h1>
+                    <span>Print Solution S.r.l.</span>
+                </div>
+            </div>
+            <div class="header-stats">
+                <div class="header-stat leads">
+                    <div class="header-stat-value" id="totalLeads">0</div>
+                    <div class="header-stat-label">Lead Attivi</div>
+                </div>
+                <div class="header-stat pipeline">
+                    <div class="header-stat-value" id="pipelineValue">€0</div>
+                    <div class="header-stat-label">Valore Pipeline</div>
+                </div>
+                <div class="header-stat won">
+                    <div class="header-stat-value" id="wonValue">€0</div>
+                    <div class="header-stat-label">Vinto 2026</div>
+                </div>
+            </div>
+        </header>
+
+        <div class="pipeline-container" id="pipelineContainer">
+            <!-- Columns will be generated by JS -->
+        </div>
+
+        <div class="last-updated">
+            Ultimo aggiornamento: <span id="lastUpdate">--</span>
+        </div>
+    </div>
+
+    <script>
+        // Password check
+        function checkPassword() {
+            const pwd = document.getElementById('passwordInput').value;
+            if (pwd === 'PrintSolution2026') {
+                document.getElementById('loginScreen').classList.add('hidden');
+                document.getElementById('mainContent').classList.remove('hidden');
+                loadPipeline();
+            } else {
+                document.getElementById('loginError').style.display = 'block';
+                document.getElementById('passwordInput').value = '';
+            }
+        }
+
+        // Pipeline stages configuration
+        const stages = [
+            { id: 'nuovo', name: 'Nuovo Lead', icon: '🎯', class: 'col-nuovo' },
+            { id: 'qualificato', name: 'Qualificato', icon: '✅', class: 'col-qualificato' },
+            { id: 'demo', name: 'Demo Schedulata', icon: '📅', class: 'col-demo' },
+            { id: 'offerta', name: 'Offerta Inviata', icon: '📄', class: 'col-offerta' },
+            { id: 'negoziazione', name: 'Negoziazione', icon: '🤝', class: 'col-negoziazione' },
+            { id: 'vinto', name: 'Vinto', icon: '🏆', class: 'col-vinto' },
+            { id: 'perso', name: 'Perso', icon: '❌', class: 'col-perso' }
+        ];
+
+        // Sample data (will be replaced by CRM data)
+        let deals = [
+            {
+                id: 1,
+                company: 'Scatola Perfetta',
+                contact: 'Da identificare',
+                product: 'AB2500',
+                value: 45000,
+                stage: 'offerta',
+                priority: 'hot',
+                date: '2025-12-15',
+                notes: '4 offerte inviate nel 2025'
+            },
+            {
+                id: 2,
+                company: 'Cartotecnica Abruzzese',
+                contact: 'Da identificare',
+                product: 'AB2500 + EDM-650X',
+                value: 85000,
+                stage: 'negoziazione',
+                priority: 'hot',
+                date: '2025-11-20',
+                notes: '3 offerte, interesse linea completa'
+            },
+            {
+                id: 3,
+                company: 'CGF Box',
+                contact: 'Ivano Crippa',
+                product: 'AB2500 + EDM-650X',
+                value: 95000,
+                stage: 'qualificato',
+                priority: 'hot',
+                date: '2026-02-06',
+                notes: 'Lead caldo, Verderio (LC)'
+            },
+            {
+                id: 4,
+                company: 'Scatolificio Valverde',
+                contact: 'Da identificare',
+                product: 'AB2500',
+                value: 45000,
+                stage: 'nuovo',
+                priority: 'warm',
+                date: '2026-02-06',
+                notes: 'Gaggiano (MI), da qualificare'
+            },
+            {
+                id: 5,
+                company: 'Novello Imballaggi',
+                contact: 'Da identificare',
+                product: 'EDM-650X',
+                value: 55000,
+                stage: 'offerta',
+                priority: 'warm',
+                date: '2025-10-08',
+                notes: '3 offerte stampante'
+            },
+            {
+                id: 6,
+                company: 'Imballaggi Moderni Srl',
+                contact: 'Marco Bianchi',
+                product: 'AB2500',
+                value: 45000,
+                stage: 'demo',
+                priority: 'hot',
+                date: '2026-02-10',
+                notes: 'Demo fissata per il 10/02'
+            },
+            {
+                id: 7,
+                company: 'PackItalia',
+                contact: 'Laura Rossi',
+                product: 'Linea completa',
+                value: 120000,
+                stage: 'vinto',
+                priority: 'hot',
+                date: '2026-01-15',
+                notes: 'Chiuso! Consegna marzo'
+            },
+            {
+                id: 8,
+                company: 'Scatolificio Bresciano',
+                contact: 'Zanini A.',
+                product: 'AB2500',
+                value: 45000,
+                stage: 'nuovo',
+                priority: 'cold',
+                date: '2026-02-06',
+                notes: 'Lead freddo, ricontattare'
+            }
+        ];
+
+        function formatCurrency(value) {
+            return '€' + value.toLocaleString('it-IT');
+        }
+
+        function formatDate(dateStr) {
+            const date = new Date(dateStr);
+            return date.toLocaleDateString('it-IT', { day: '2-digit', month: 'short' });
+        }
+
+        function calculateStats() {
+            const activeDeals = deals.filter(d => !['vinto', 'perso'].includes(d.stage));
+            const wonDeals = deals.filter(d => d.stage === 'vinto');
+            
+            document.getElementById('totalLeads').textContent = activeDeals.length;
+            document.getElementById('pipelineValue').textContent = formatCurrency(
+                activeDeals.reduce((sum, d) => sum + d.value, 0)
+            );
+            document.getElementById('wonValue').textContent = formatCurrency(
+                wonDeals.reduce((sum, d) => sum + d.value, 0)
+            );
+        }
+
+        function renderPipeline() {
+            const container = document.getElementById('pipelineContainer');
+            container.innerHTML = '';
+
+            stages.forEach(stage => {
+                const stageDeals = deals.filter(d => d.stage === stage.id);
+                const stageValue = stageDeals.reduce((sum, d) => sum + d.value, 0);
+
+                const column = document.createElement('div');
+                column.className = `pipeline-column ${stage.class}`;
+                column.innerHTML = `
+                    <div class="column-header">
+                        <div class="column-title">
+                            <div class="column-icon">${stage.icon}</div>
+                            <div>
+                                <div class="column-name">${stage.name}</div>
+                                <div class="column-value">${formatCurrency(stageValue)}</div>
+                            </div>
+                        </div>
+                        <div class="column-count">${stageDeals.length}</div>
+                    </div>
+                    <div class="cards-container" id="cards-${stage.id}">
+                        ${stageDeals.length === 0 ? `
+                            <div class="empty-state">
+                                <div class="empty-state-icon">📭</div>
+                                <div>Nessuna trattativa</div>
+                            </div>
+                        ` : ''}
+                    </div>
+                    <button class="add-deal-btn" onclick="addDeal('${stage.id}')">
+                        + Aggiungi trattativa
+                    </button>
+                `;
+                container.appendChild(column);
+
+                const cardsContainer = document.getElementById(`cards-${stage.id}`);
+                stageDeals.forEach(deal => {
+                    const card = document.createElement('div');
+                    card.className = 'deal-card';
+                    card.onclick = () => editDeal(deal.id);
+                    card.innerHTML = `
+                        <div class="deal-header">
+                            <div class="deal-company">${deal.company}</div>
+                            <div class="deal-value">${formatCurrency(deal.value)}</div>
+                        </div>
+                        <div class="deal-contact">👤 ${deal.contact}</div>
+                        <div class="deal-product">📦 ${deal.product}</div>
+                        <div class="deal-footer">
+                            <div class="deal-date">📅 ${formatDate(deal.date)}</div>
+                            <div class="deal-priority priority-${deal.priority}"></div>
+                        </div>
+                    `;
+                    cardsContainer.appendChild(card);
+                });
+            });
+
+            calculateStats();
+            document.getElementById('lastUpdate').textContent = 
+                new Date().toLocaleString('it-IT', { 
+                    day: '2-digit', month: '2-digit', year: 'numeric',
+                    hour: '2-digit', minute: '2-digit' 
+                });
+        }
+
+        function addDeal(stageId) {
+            alert('Funzione in sviluppo: Aggiungi nuova trattativa in "' + 
+                stages.find(s => s.id === stageId).name + '"');
+        }
+
+        function editDeal(dealId) {
+            const deal = deals.find(d => d.id === dealId);
+            alert(`📋 ${deal.company}\n\n` +
+                  `Contatto: ${deal.contact}\n` +
+                  `Prodotto: ${deal.product}\n` +
+                  `Valore: ${formatCurrency(deal.value)}\n` +
+                  `Note: ${deal.notes}`);
+        }
+
+        async function loadPipeline() {
+            // Try to load from CRM data file
+            try {
+                const response = await fetch('pipeline_data.json');
+                if (response.ok) {
+                    const data = await response.json();
+                    if (data.deals && data.deals.length > 0) {
+                        deals = data.deals;
+                    }
+                }
+            } catch (e) {
+                console.log('Using sample data');
+            }
+            renderPipeline();
+        }
+
+        // Auto-refresh every 5 minutes
+        setInterval(loadPipeline, 300000);
+    </script>
+</body>
+</html>

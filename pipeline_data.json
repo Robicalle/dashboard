@@ -1,0 +1,102 @@
+{
+  "lastUpdate": "2026-02-07T22:40:00",
+  "deals": [
+    {
+      "id": 1,
+      "company": "Scatola Perfetta",
+      "contact": "Da identificare",
+      "product": "AB2500",
+      "value": 45000,
+      "stage": "offerta",
+      "priority": "hot",
+      "date": "2025-12-15",
+      "notes": "4 offerte inviate nel 2025 - Lead prioritario"
+    },
+    {
+      "id": 2,
+      "company": "Cartotecnica Abruzzese",
+      "contact": "Da identificare",
+      "product": "AB2500 + EDM-650X",
+      "value": 85000,
+      "stage": "negoziazione",
+      "priority": "hot",
+      "date": "2025-11-20",
+      "notes": "3 offerte, interesse linea completa packaging"
+    },
+    {
+      "id": 3,
+      "company": "CGF Box",
+      "contact": "Ivano Crippa",
+      "product": "AB2500 + EDM-650X",
+      "value": 95000,
+      "stage": "qualificato",
+      "priority": "hot",
+      "date": "2026-02-06",
+      "notes": "Lead caldo da SDR, Verderio (LC)"
+    },
+    {
+      "id": 4,
+      "company": "Scatolificio Valverde",
+      "contact": "Da identificare",
+      "product": "AB2500",
+      "value": 45000,
+      "stage": "nuovo",
+      "priority": "warm",
+      "date": "2026-02-06",
+      "notes": "Gaggiano (MI), da qualificare"
+    },
+    {
+      "id": 5,
+      "company": "Novello Imballaggi",
+      "contact": "Da identificare",
+      "product": "EDM-650X",
+      "value": 55000,
+      "stage": "offerta",
+      "priority": "warm",
+      "date": "2025-10-08",
+      "notes": "3 offerte stampante inkjet"
+    },
+    {
+      "id": 6,
+      "company": "Imballaggi Moderni Srl",
+      "contact": "Marco Bianchi",
+      "product": "AB2500",
+      "value": 45000,
+      "stage": "demo",
+      "priority": "hot",
+      "date": "2026-02-10",
+      "notes": "Demo programmata 10/02"
+    },
+    {
+      "id": 7,
+      "company": "PackItalia",
+      "contact": "Laura Rossi",
+      "product": "Linea completa",
+      "value": 120000,
+      "stage": "vinto",
+      "priority": "hot",
+      "date": "2026-01-15",
+      "notes": "VINTO! Consegna prevista marzo 2026"
+    },
+    {
+      "id": 8,
+      "company": "Scatolificio Bresciano",
+      "contact": "Zanini A.",
+      "product": "AB2500",
+      "value": 45000,
+      "stage": "nuovo",
+      "priority": "cold",
+      "date": "2026-02-06",
+      "notes": "Lead freddo, sequenza riattivazione"
+    }
+  ],
+  "stages": [
+    { "id": "nuovo", "name": "Nuovo Lead", "order": 1 },
+    { "id": "qualificato", "name": "Qualificato", "order": 2 },
+    { "id": "demo", "name": "Demo Schedulata", "order": 3 },
+    { "id": "offerta", "name": "Offerta Inviata", "order": 4 },
+    { "id": "negoziazione", "name": "Negoziazione", "order": 5 },
+    { "id": "vinto", "name": "Vinto", "order": 6 },
+    { "id": "perso", "name": "Perso", "order": 7 }
+  ]
+}

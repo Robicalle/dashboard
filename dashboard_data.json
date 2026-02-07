@@ -1,0 +1,44 @@
+{
+  "lastUpdate": "2026-02-07T21:55:00",
+  "anno": 2026,
+  "stats": {
+    "fatturato": 230459,
+    "leadAttivi": 332,
+    "macchineVendute": 105651,
+    "leasingOperazioni": 1,
+    "leasingValore": 56000
+  },
+  "conversionRate": {
+    "clienti": 64,
+    "totale": 396,
+    "percentuale": 16
+  },
+  "leadPrioritari": [
+    {"azienda": "Scatola Perfetta", "contatto": "Giorgio Gallo", "prodotto": "AB2500 Box Maker", "offerte": 4, "priorita": "high"},
+    {"azienda": "Cartotecnica Abruzzese", "contatto": "-", "prodotto": "Stampa cartone", "offerte": 3, "priorita": "high"},
+    {"azienda": "Novello Imballaggi", "contatto": "Alessandra Mura", "prodotto": "Stampante", "offerte": 3, "priorita": "high"},
+    {"azienda": "Omnistampa", "contatto": "Carlo", "prodotto": "-", "offerte": 3, "priorita": "high"},
+    {"azienda": "Mediatipo", "contatto": "Bepi Zonno", "prodotto": "AB2500", "offerte": 2, "priorita": "medium"},
+    {"azienda": "Mediantes", "contatto": "Dennis Castellan", "prodotto": "AB2500", "offerte": 2, "priorita": "medium"}
+  ],
+  "automazioni": [
+    {"nome": "Dashboard Update", "schedule": "Ogni giorno 8:00", "status": "active", "icon": "sync-alt"},
+    {"nome": "Check Email Inbox", "schedule": "Non configurato", "status": "paused", "icon": "envelope"},
+    {"nome": "Sync Calendario", "schedule": "Non configurato", "status": "paused", "icon": "calendar"},
+    {"nome": "Report Settimanale CMO", "schedule": "Lunedì 9:00", "status": "pending", "icon": "chart-line"},
+    {"nome": "Post LinkedIn", "schedule": "3 bozze in attesa review", "status": "pending", "icon": "linkedin"}
+  ],
+  "attivitaRecenti": [
+    {"tempo": "Oggi, 21:55", "azione": "Dashboard aggiornata a dati 2026"},
+    {"tempo": "Oggi, 21:52", "azione": "Aggiornato OpenClaw a v2026.2.6-3"},
+    {"tempo": "Oggi, 21:49", "azione": "Attivato cron auto-refresh dashboard"},
+    {"tempo": "Oggi, 21:07", "azione": "Creato Excel lead (396 contatti)"},
+    {"tempo": "Oggi, 14:18", "azione": "Creata bozza etichetta SVG"}
+  ],
+  "prossimiPassi": [
+    {"nome": "Richiamare Scatola Perfetta", "desc": "4 offerte AB2500 senza chiusura - Giorgio Gallo", "icon": "phone", "color": "#ff6b6b"},
+    {"nome": "Approvare Post LinkedIn", "desc": "3 bozze pronte: AB2500, EDM-650X, Combo", "icon": "check-circle", "color": "#667eea"},
+    {"nome": "Configurare Automazioni", "desc": "Email check, calendario, heartbeat", "icon": "cogs", "color": "#4facfe"},
+    {"nome": "Report Vendite Q1", "desc": "Confronto obiettivi vs risultati", "icon": "database", "color": "#43e97b"}
+  ]
+}

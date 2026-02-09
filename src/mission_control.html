@@ -116,6 +116,7 @@
                             <th class="text-right">Consuntivo</th>
                             <th class="text-right">Budget</th>
                             <th class="text-right">Δ%</th>
+                            <th class="text-right">Previsione</th>
                         </tr>
                     </thead>
                     <tbody id="monthlyBody"></tbody>
@@ -171,17 +172,18 @@
         const stats = data.stats || {};
         const mesi = data.mesi || [];
         const budgetAnnuale = data.budgetAnnuale || 2600000;
-        const meseCorrente = mesi.filter(m => m.fatturato > 0).pop();
+        const prevAnnuale = data.previsioneAnnuale || 0;
         const budgetYTD = mesi.filter(m => m.fatturato > 0).reduce((s,m) => s + (m.budget||0), 0);
         const deltaYTD = budgetYTD > 0 ? ((stats.fatturato - budgetYTD) / budgetYTD * 100).toFixed(1) : 0;
         const deltaColor = deltaYTD >= 0 ? '#4ade80' : '#f87171';
         const deltaSign = deltaYTD >= 0 ? '+' : '';
+        const prevColor = prevAnnuale >= budgetAnnuale ? '#4ade80' : '#fb923c';
 
         document.getElementById('statsGrid').innerHTML =
             '<div class="stat-card"><div class="stat-label">Fatturato YTD 2026</div><div class="stat-value green">' + fmt(stats.fatturato) + '</div></div>' +
-            '<div class="stat-card"><div class="stat-label">Budget YTD</div><div class="stat-value blue">' + fmt(budgetYTD) + '</div></div>' +
-            '<div class="stat-card"><div class="stat-label">\u0394 vs Budget</div><div class="stat-value" style="color:' + deltaColor + '">' + deltaSign + deltaYTD + '%</div></div>' +
-            '<div class="stat-card"><div class="stat-label">Obiettivo ' + (data.anno||2026) + '</div><div class="stat-value purple">' + fmt(budgetAnnuale) + '</div></div>';
+            '<div class="stat-card"><div class="stat-label">\u0394 vs Budget YTD</div><div class="stat-value" style="color:' + deltaColor + '">' + deltaSign + deltaYTD + '%</div><div style="font-size:0.75rem;color:#94a3b8;margin-top:4px;">Budget YTD: ' + fmt(budgetYTD) + '</div></div>' +
+            '<div class="stat-card"><div class="stat-label">Proiezione Annuale</div><div class="stat-value" style="color:' + prevColor + '">' + fmt(prevAnnuale) + '</div><div style="font-size:0.75rem;color:#94a3b8;margin-top:4px;">su andamento + stagionalità</div></div>' +
+            '<div class="stat-card"><div class="stat-label">Obiettivo ' + (data.anno||2026) + '</div><div class="stat-value purple">' + fmt(budgetAnnuale) + '</div><div style="font-size:0.75rem;color:#94a3b8;margin-top:4px;">Residuo: ' + fmt(data.budgetResiduo||0) + '</div></div>';
 
         // Bar chart: 3 barre per mese (consuntivo, budget, 2025)
         var maxVal = Math.max(...mesi.map(m => Math.max(m.fatturato||0, m.budget||0, m.storico2025||0)), 1);
@@ -202,36 +204,42 @@
         document.getElementById('barChart').innerHTML = chartHtml;
 
         // Monthly table with budget
-        var totG10=0, totG40=0, totG50=0, totG60=0, totAll=0, totBudget=0;
+        var totG10=0, totG40=0, totG50=0, totG60=0, totAll=0, totBudget=0, totPrev=0;
         var rows = '';
         mesi.forEach(function(m) {
             if (m.fatturato > 0 || (m.budget && m.budget > 0)) {
-                totG10 += m.gruppo10||0; totG40 += m.gruppo40||0; totG50 += m.gruppo50||0; totG60 += m.gruppo60||0; totAll += m.fatturato||0; totBudget += m.budget||0;
+                totG10 += m.gruppo10||0; totG40 += m.gruppo40||0; totG50 += m.gruppo50||0; totG60 += m.gruppo60||0; totAll += m.fatturato||0; totBudget += m.budget||0; totPrev += m.previsione||m.fatturato||0;
                 var delta = m.budget > 0 ? ((m.fatturato - m.budget) / m.budget * 100).toFixed(1) : '-';
                 var dColor = delta >= 0 ? 'color:#4ade80' : 'color:#f87171';
                 var dText = delta === '-' ? '-' : (delta >= 0 ? '+' : '') + delta + '%';
-                rows += '<tr>' +
-                    '<td>' + m.mese + '</td>' +
+                var isFuturo = m.fatturato === 0 && m.budget > 0;
+                var rowStyle = isFuturo ? ' style="opacity:0.6"' : '';
+                var prevText = m.previsione > 0 ? fmt(m.previsione) : '-';
+                var prevStyle = isFuturo ? 'color:#fb923c' : 'color:#94a3b8';
+                rows += '<tr' + rowStyle + '>' +
+                    '<td>' + m.mese + (isFuturo ? ' <span style="font-size:0.65rem;color:#64748b">🔮</span>' : '') + '</td>' +
                     '<td class="text-right text-blue">' + fmt(m.gruppo10) + '</td>' +
                     '<td class="text-right text-green">' + fmt(m.gruppo40) + '</td>' +
                     '<td class="text-right text-yellow">' + fmt(m.gruppo50) + '</td>' +
                     '<td class="text-right text-purple">' + fmt(m.gruppo60) + '</td>' +
                     '<td class="text-right font-bold">' + fmt(m.fatturato) + '</td>' +
                     '<td class="text-right text-dim">' + fmt(m.budget) + '</td>' +
-                    '<td class="text-right" style="' + dColor + ';font-weight:700">' + dText + '</td></tr>';
+                    '<td class="text-right" style="' + dColor + ';font-weight:700">' + dText + '</td>' +
+                    '<td class="text-right" style="' + prevStyle + '">' + prevText + '</td></tr>';
             }
         });
         var dTot = totBudget > 0 ? ((totAll - totBudget) / totBudget * 100).toFixed(1) : '-';
         var dTotColor = dTot >= 0 ? 'color:#4ade80' : 'color:#f87171';
         var dTotText = dTot === '-' ? '-' : (dTot >= 0 ? '+' : '') + dTot + '%';
-        rows += '<tr class="total-row"><td>TOTALE YTD</td>' +
+        rows += '<tr class="total-row"><td>TOTALE</td>' +
             '<td class="text-right text-blue">' + fmt(totG10) + '</td>' +
             '<td class="text-right text-green">' + fmt(totG40) + '</td>' +
             '<td class="text-right text-yellow">' + fmt(totG50) + '</td>' +
             '<td class="text-right text-purple">' + fmt(totG60) + '</td>' +
             '<td class="text-right">' + fmt(totAll) + '</td>' +
             '<td class="text-right text-dim">' + fmt(totBudget) + '</td>' +
-            '<td class="text-right" style="' + dTotColor + ';font-weight:700">' + dTotText + '</td></tr>';
+            '<td class="text-right" style="' + dTotColor + ';font-weight:700">' + dTotText + '</td>' +
+            '<td class="text-right" style="color:#fb923c">' + fmt(prevAnnuale) + '</td></tr>';
         document.getElementById('monthlyBody').innerHTML = rows;
 
         // Lead prioritari

@@ -1,5 +1,5 @@
 ﻿{
-    "lastUpdate":  "2026-02-09T11:57:07",
+    "lastUpdate":  "2026-02-09T16:38:37",
     "anno":  2026,
     "stats":  {
                   "fatturato":  230659.29,
@@ -91,6 +91,10 @@
                     ],
     "attivitaRecenti":  [
                             {
+                                "tempo":  "09/02 16:38",
+                                "azione":  "Auto-refresh dati database"
+                            },
+                            {
                                 "tempo":  "Oggi, 21:55",
                                 "azione":  "Dashboard aggiornata a dati 2026"
                             },
@@ -105,10 +109,6 @@
                             {
                                 "tempo":  "Oggi, 21:07",
                                 "azione":  "Creato Excel lead (396 contatti)"
-                            },
-                            {
-                                "tempo":  "Oggi, 14:18",
-                                "azione":  "Creata bozza etichetta SVG"
                             }
                         ],
     "prossimiPassi":  [
@@ -140,124 +140,150 @@
     "budgetAnnuale":  2600000,
     "mesi":  [
                  {
-                     "mese":  "Gennaio",
+                     "budgetOriginale":  155207,
+                     "storico2025":  247124.09,
+                     "gruppo50":  5961.96,
                      "gruppo40":  79911.98,
                      "gruppo10":  107085.00,
                      "fatturato":  195275.94,
-                     "gruppo50":  5961.96,
-                     "gruppo60":  2317.00,
-                     "budget":  155206.47,
-                     "storico2025":  247124.09
+                     "budget":  155207,
+                     "previsione":  195275.94,
+                     "mese":  "Gennaio",
+                     "gruppo60":  2317.00
                  },
                  {
-                     "mese":  "Febbraio",
+                     "budgetOriginale":  166251.8,
+                     "storico2025":  257813.72,
+                     "gruppo50":  983.50,
                      "gruppo40":  34399.85,
                      "gruppo10":  0.00,
                      "fatturato":  35383.35,
-                     "gruppo50":  983.50,
-                     "gruppo60":  0.00,
-                     "budget":  166250.77,
-                     "storico2025":  257813.72
+                     "budget":  166251.8,
+                     "previsione":  35383.35,
+                     "mese":  "Febbraio",
+                     "gruppo60":  0.00
                  },
                  {
+                     "budgetOriginale":  191269,
+                     "storico2025":  244677.72,
+                     "gruppo50":  0,
+                     "gruppo40":  0,
+                     "gruppo10":  0,
+                     "fatturato":  0,
+                     "budget":  198891.04,
+                     "previsione":  137243.01,
                      "mese":  "Marzo",
+                     "gruppo60":  0
+                 },
+                 {
+                     "budgetOriginale":  244514.4,
+                     "storico2025":  94459.22,
+                     "gruppo50":  0,
                      "gruppo40":  0,
                      "gruppo10":  0,
                      "fatturato":  0,
-                     "gruppo50":  0,
-                     "gruppo60":  0,
-                     "budget":  191268.32,
-                     "storico2025":  244677.72
-                 },
-                 {
+                     "budget":  254258.26,
+                     "previsione":  175448.67,
                      "mese":  "Aprile",
+                     "gruppo60":  0
+                 },
+                 {
+                     "budgetOriginale":  224489.2,
+                     "storico2025":  175178.6,
+                     "gruppo50":  0,
                      "gruppo40":  0,
                      "gruppo10":  0,
                      "fatturato":  0,
-                     "gruppo50":  0,
-                     "gruppo60":  0,
-                     "budget":  244514.09,
-                     "storico2025":  94459.22
-                 },
-                 {
+                     "budget":  233435.06,
+                     "previsione":  161079.80,
                      "mese":  "Maggio",
+                     "gruppo60":  0
+                 },
+                 {
+                     "budgetOriginale":  175216.6,
+                     "storico2025":  232156.53,
+                     "gruppo50":  0,
                      "gruppo40":  0,
                      "gruppo10":  0,
                      "fatturato":  0,
-                     "gruppo50":  0,
-                     "gruppo60":  0,
-                     "budget":  224489.52,
-                     "storico2025":  175178.6
-                 },
-                 {
+                     "budget":  182198.95,
+                     "previsione":  125724.78,
                      "mese":  "Giugno",
+                     "gruppo60":  0
+                 },
+                 {
+                     "budgetOriginale":  357793.8,
+                     "storico2025":  403585.25,
+                     "gruppo50":  0,
                      "gruppo40":  0,
                      "gruppo10":  0,
                      "fatturato":  0,
-                     "gruppo50":  0,
-                     "gruppo60":  0,
-                     "budget":  175217.7,
-                     "storico2025":  232156.53
-                 },
-                 {
+                     "budget":  372051.83,
+                     "previsione":  256731.08,
                      "mese":  "Luglio",
+                     "gruppo60":  0
+                 },
+                 {
+                     "budgetOriginale":  50349,
+                     "storico2025":  30234.5,
+                     "gruppo50":  0,
                      "gruppo40":  0,
                      "gruppo10":  0,
                      "fatturato":  0,
-                     "gruppo50":  0,
-                     "gruppo60":  0,
-                     "budget":  357794.86,
-                     "storico2025":  403585.25
-                 },
-                 {
+                     "budget":  52355.40,
+                     "previsione":  36127.38,
                      "mese":  "Agosto",
+                     "gruppo60":  0
+                 },
+                 {
+                     "budgetOriginale":  221247,
+                     "storico2025":  262271.64,
+                     "gruppo50":  0,
                      "gruppo40":  0,
                      "gruppo10":  0,
                      "fatturato":  0,
-                     "gruppo50":  0,
-                     "gruppo60":  0,
-                     "budget":  50348.72,
-                     "storico2025":  30234.5
-                 },
-                 {
+                     "budget":  230063.66,
+                     "previsione":  158753.40,
                      "mese":  "Settembre",
+                     "gruppo60":  0
+                 },
+                 {
+                     "budgetOriginale":  315863.6,
+                     "storico2025":  362273.74,
+                     "gruppo50":  0,
                      "gruppo40":  0,
                      "gruppo10":  0,
                      "fatturato":  0,
-                     "gruppo50":  0,
-                     "gruppo60":  0,
-                     "budget":  221247.54,
-                     "storico2025":  262271.64
-                 },
-                 {
+                     "budget":  328450.71,
+                     "previsione":  226644.51,
                      "mese":  "Ottobre",
+                     "gruppo60":  0
+                 },
+                 {
+                     "budgetOriginale":  250250,
+                     "storico2025":  364472.17,
+                     "gruppo50":  0,
                      "gruppo40":  0,
                      "gruppo10":  0,
                      "fatturato":  0,
-                     "gruppo50":  0,
-                     "gruppo60":  0,
-                     "budget":  315863.36,
-                     "storico2025":  362273.74
-                 },
-                 {
+                     "budget":  260222.42,
+                     "previsione":  179564.18,
                      "mese":  "Novembre",
-                     "gruppo40":  0,
-                     "gruppo10":  0,
-                     "fatturato":  0,
-                     "gruppo50":  0,
-                     "gruppo60":  0,
-                     "budget":  250251.14,
-                     "storico2025":  364472.17
+                     "gruppo60":  0
                  },
                  {
-                     "mese":  "Dicembre",
+                     "budgetOriginale":  247548.6,
+                     "storico2025":  115588.99,
+                     "gruppo50":  0,
                      "gruppo40":  0,
                      "gruppo10":  0,
                      "fatturato":  0,
-                     "gruppo50":  0,
-                     "gruppo60":  0,
-                     "budget":  247547.51,
-                     "storico2025":  115588.99
+                     "budget":  257413.37,
+                     "previsione":  177625.82,
+                     "mese":  "Dicembre",
+                     "gruppo60":  0
                  }
-             ]
+             ],
+    "previsioneAnnuale":  1865602,
+    "budgetResiduo":  2369340.71
 }

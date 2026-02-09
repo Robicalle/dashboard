@@ -195,9 +195,9 @@
             chartHtml += '<div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:2px;">' +
                 '<div style="font-size:0.6rem;color:#e2e8f0;font-weight:600;min-height:14px;">' + valLabel + '</div>' +
                 '<div style="display:flex;align-items:flex-end;gap:3px;height:200px;">' +
-                '<div style="width:14px;height:' + hC + 'px;background:linear-gradient(180deg,#4ade80,#22c55e);border-radius:3px 3px 0 0;box-shadow:0 0 8px rgba(74,222,128,0.3);"></div>' +
-                '<div style="width:14px;height:' + hB + 'px;background:linear-gradient(180deg,#60a5fa,#3b82f6);border-radius:3px 3px 0 0;box-shadow:0 0 8px rgba(96,165,250,0.3);"></div>' +
-                '<div style="width:14px;height:' + h25 + 'px;background:#475569;border-radius:3px 3px 0 0;"></div>' +
+                '<div title="Consuntivo: ' + fmt(m.fatturato||0) + '" style="width:14px;height:' + hC + 'px;background:linear-gradient(180deg,#4ade80,#22c55e);border-radius:3px 3px 0 0;box-shadow:0 0 8px rgba(74,222,128,0.3);cursor:pointer;"></div>' +
+                '<div title="Budget: ' + fmt(m.budget||0) + '" style="width:14px;height:' + hB + 'px;background:linear-gradient(180deg,#60a5fa,#3b82f6);border-radius:3px 3px 0 0;box-shadow:0 0 8px rgba(96,165,250,0.3);cursor:pointer;"></div>' +
+                '<div title="2025: ' + fmt(m.storico2025||0) + '" style="width:14px;height:' + h25 + 'px;background:#475569;border-radius:3px 3px 0 0;cursor:pointer;"></div>' +
                 '</div>' +
                 '<div style="font-size:0.65rem;color:#94a3b8;">' + mesiLabels[i] + '</div></div>';
         });

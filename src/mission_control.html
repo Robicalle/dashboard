@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Print Solution — Mission Control</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', system-ui, sans-serif; background: #0f172a; color: #e2e8f0; min-height: 100vh; }
+        
+        .header { background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%); padding: 24px 32px; border-bottom: 1px solid #334155; display: flex; justify-content: space-between; align-items: center; }
+        .header h1 { font-size: 1.5rem; font-weight: 700; }
+        .header h1 span { color: #667eea; }
+        .header .last-update { font-size: 0.8rem; color: #94a3b8; }
+        
+        .container { max-width: 1400px; margin: 0 auto; padding: 24px; }
+        
+        /* Stats cards */
+        .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; margin-bottom: 24px; }
+        .stat-card { background: #1e293b; border-radius: 12px; padding: 20px; border: 1px solid #334155; }
+        .stat-card .stat-label { font-size: 0.75rem; color: #94a3b8; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px; }
+        .stat-card .stat-value { font-size: 1.8rem; font-weight: 700; }
+        .stat-card .stat-value.green { color: #4ade80; }
+        .stat-card .stat-value.blue { color: #60a5fa; }
+        .stat-card .stat-value.purple { color: #a78bfa; }
+        .stat-card .stat-value.orange { color: #fb923c; }
+        
+        /* Monthly table */
+        .section { background: #1e293b; border-radius: 12px; padding: 24px; border: 1px solid #334155; margin-bottom: 24px; }
+        .section h2 { font-size: 1.1rem; font-weight: 600; margin-bottom: 16px; display: flex; align-items: center; gap: 8px; }
+        .section h2 i { color: #667eea; }
+        
+        table { width: 100%; border-collapse: collapse; }
+        th { text-align: left; padding: 10px 12px; font-size: 0.75rem; color: #94a3b8; text-transform: uppercase; letter-spacing: 1px; border-bottom: 1px solid #334155; }
+        td { padding: 10px 12px; font-size: 0.9rem; border-bottom: 1px solid #1e293b; }
+        tr:hover { background: #334155; }
+        .text-right { text-align: right; }
+        .font-bold { font-weight: 700; }
+        .text-green { color: #4ade80; }
+        .text-blue { color: #60a5fa; }
+        .text-yellow { color: #fbbf24; }
+        .text-purple { color: #a78bfa; }
+        .text-dim { color: #64748b; }
+        tr.total-row { background: #334155; font-weight: 700; }
+        tr.total-row td { border-top: 2px solid #667eea; }
+        
+        /* Bar chart */
+        .bar-container { display: flex; align-items: flex-end; gap: 8px; height: 180px; margin-top: 16px; padding: 0 8px; }
+        .bar-wrapper { flex: 1; display: flex; flex-direction: column; align-items: center; gap: 4px; }
+        .bar { width: 100%; border-radius: 4px 4px 0 0; background: linear-gradient(180deg, #667eea 0%, #764ba2 100%); min-height: 2px; transition: height 0.3s; position: relative; }
+        .bar-label { font-size: 0.65rem; color: #94a3b8; }
+        .bar-value { font-size: 0.65rem; color: #e2e8f0; font-weight: 600; }
+        
+        /* Lead prioritari */
+        .lead-row { display: flex; justify-content: space-between; align-items: center; padding: 12px 0; border-bottom: 1px solid #334155; }
+        .lead-row:last-child { border-bottom: none; }
+        .lead-name { font-weight: 600; }
+        .lead-detail { font-size: 0.8rem; color: #94a3b8; }
+        .badge { padding: 2px 8px; border-radius: 12px; font-size: 0.7rem; font-weight: 600; }
+        .badge-red { background: #7f1d1d; color: #fca5a5; }
+        .badge-yellow { background: #78350f; color: #fde68a; }
+        .badge-green { background: #14532d; color: #86efac; }
+        
+        /* Automazioni */
+        .auto-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 12px; }
+        .auto-card { background: #0f172a; border-radius: 8px; padding: 14px; display: flex; align-items: center; gap: 12px; }
+        .auto-icon { width: 36px; height: 36px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 0.9rem; }
+        .auto-icon.active { background: #14532d; color: #4ade80; }
+        .auto-icon.paused { background: #78350f; color: #fbbf24; }
+        .auto-name { font-size: 0.85rem; font-weight: 600; }
+        .auto-schedule { font-size: 0.7rem; color: #94a3b8; }
+        
+        .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+        @media (max-width: 768px) { .two-col { grid-template-columns: 1fr; } }
+        
+        /* Attività recenti */
+        .activity-item { padding: 8px 0; border-bottom: 1px solid #334155; font-size: 0.85rem; }
+        .activity-item:last-child { border-bottom: none; }
+        .activity-time { color: #94a3b8; font-size: 0.75rem; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1><i class="fas fa-rocket"></i> Print Solution — <span>Mission Control</span></h1>
+        <div class="last-update" id="lastUpdate"></div>
+    </div>
+    
+    <div class="container">
+        <!-- Stats -->
+        <div class="stats-grid" id="statsGrid"></div>
+        
+        <!-- Grafico barre mensile -->
+        <div class="section">
+            <h2><i class="fas fa-chart-bar"></i> Fatturato Mensile 2026</h2>
+            <div class="bar-container" id="barChart"></div>
+        </div>
+        
+        <!-- Tabella mensile -->
+        <div class="section">
+            <h2><i class="fas fa-table"></i> Dettaglio per Gruppo</h2>
+            <div style="overflow-x: auto;">
+                <table id="monthlyTable">
+                    <thead>
+                        <tr>
+                            <th>Mese</th>
+                            <th class="text-right">G10 Macchine</th>
+                            <th class="text-right">G40 Consumabili</th>
+                            <th class="text-right">G50 Ricambi</th>
+                            <th class="text-right">G60 Etichette</th>
+                            <th class="text-right">Totale</th>
+                        </tr>
+                    </thead>
+                    <tbody id="monthlyBody"></tbody>
+                </table>
+            </div>
+        </div>
+        
+        <div class="two-col">
+            <!-- Lead prioritari -->
+            <div class="section">
+                <h2><i class="fas fa-fire"></i> Lead Prioritari</h2>
+                <div id="leadList"></div>
+            </div>
+            
+            <!-- Automazioni -->
+            <div class="section">
+                <h2><i class="fas fa-cogs"></i> Automazioni Attive</h2>
+                <div class="auto-grid" id="autoGrid"></div>
+            </div>
+        </div>
+        
+        <div class="two-col">
+            <!-- Prossimi passi -->
+            <div class="section">
+                <h2><i class="fas fa-tasks"></i> Prossimi Passi</h2>
+                <div id="nextSteps"></div>
+            </div>
+            
+            <!-- Attività recenti -->
+            <div class="section">
+                <h2><i class="fas fa-history"></i> Attività Recenti</h2>
+                <div id="recentActivity"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+    // Carica dati dal JSON
+    fetch('dashboard_data.json')
+        .then(r => r.json())
+        .then(data => render(data))
+        .catch(e => {
+            // Fallback: dati inline
+            console.error('Errore caricamento JSON:', e);
+            document.querySelector('.container').innerHTML = '<div class="section"><h2>Errore caricamento dati</h2><p>dashboard_data.json non trovato.</p></div>';
+        });
+
+    function fmt(n) {
+        if (n === undefined || n === null) return '€0';
+        return '€' + Math.round(n).toLocaleString('it-IT');
+    }
+
+    function render(data) {
+        // Last update
+        document.getElementById('lastUpdate').textContent = 'Ultimo aggiornamento: ' + (data.lastUpdate || '-');
+
+        // Stats cards
+        const stats = data.stats || {};
+        const mesi = data.mesi || [];
+        const meseCorrente = mesi.filter(m => m.fatturato > 0).pop();
+        
+        document.getElementById('statsGrid').innerHTML = `
+            <div class="stat-card">
+                <div class="stat-label">Fatturato YTD 2026</div>
+                <div class="stat-value green">${fmt(stats.fatturato)}</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-label">Macchine (G10) YTD</div>
+                <div class="stat-value blue">${fmt(stats.macchineVendute)}</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-label">Leasing</div>
+                <div class="stat-value purple">${stats.leasingOperazioni || 0} op. — ${fmt(stats.leasingValore)}</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-label">Mese corrente${meseCorrente ? ' (' + meseCorrente.mese + ')' : ''}</div>
+                <div class="stat-value orange">${meseCorrente ? fmt(meseCorrente.fatturato) : '€0'}</div>
+            </div>
+        `;
+
+        // Bar chart
+        const maxFat = Math.max(...mesi.map(m => m.fatturato), 1);
+        const mesiLabels = ['Gen','Feb','Mar','Apr','Mag','Giu','Lug','Ago','Set','Ott','Nov','Dic'];
+        document.getElementById('barChart').innerHTML = mesi.map((m, i) => {
+            const h = m.fatturato > 0 ? Math.max((m.fatturato / maxFat) * 160, 4) : 2;
+            const color = m.fatturato > 0 ? '' : 'background: #334155;';
+            return `<div class="bar-wrapper">
+                <div class="bar-value">${m.fatturato > 0 ? fmt(m.fatturato) : ''}</div>
+                <div class="bar" style="height:${h}px;${color}"></div>
+                <div class="bar-label">${mesiLabels[i]}</div>
+            </div>`;
+        }).join('');
+
+        // Monthly table
+        let totG10=0, totG40=0, totG50=0, totG60=0, totAll=0;
+        let rows = '';
+        mesi.forEach(m => {
+            if (m.fatturato > 0) {
+                totG10 += m.gruppo10; totG40 += m.gruppo40; totG50 += m.gruppo50; totG60 += m.gruppo60; totAll += m.fatturato;
+                rows += `<tr>
+                    <td>${m.mese}</td>
+                    <td class="text-right text-blue">${fmt(m.gruppo10)}</td>
+                    <td class="text-right text-green">${fmt(m.gruppo40)}</td>
+                    <td class="text-right text-yellow">${fmt(m.gruppo50)}</td>
+                    <td class="text-right text-purple">${fmt(m.gruppo60)}</td>
+                    <td class="text-right font-bold">${fmt(m.fatturato)}</td>
+                </tr>`;
+            }
+        });
+        rows += `<tr class="total-row">
+            <td>TOTALE YTD</td>
+            <td class="text-right text-blue">${fmt(totG10)}</td>
+            <td class="text-right text-green">${fmt(totG40)}</td>
+            <td class="text-right text-yellow">${fmt(totG50)}</td>
+            <td class="text-right text-purple">${fmt(totG60)}</td>
+            <td class="text-right">${fmt(totAll)}</td>
+        </tr>`;
+        document.getElementById('monthlyBody').innerHTML = rows;
+
+        // Lead prioritari
+        const leads = data.leadPrioritari || [];
+        document.getElementById('leadList').innerHTML = leads.map(l => {
+            const badgeClass = l.priorita === 'high' ? 'badge-red' : l.priorita === 'medium' ? 'badge-yellow' : 'badge-green';
+            const badgeText = l.priorita === 'high' ? 'CALDO' : l.priorita === 'medium' ? 'TIEPIDO' : 'FREDDO';
+            return `<div class="lead-row">
+                <div>
+                    <div class="lead-name">${l.azienda}</div>
+                    <div class="lead-detail">${l.contatto || '-'} — ${l.prodotto || '-'}</div>
+                </div>
+                <span class="badge ${badgeClass}">${badgeText}</span>
+            </div>`;
+        }).join('');
+
+        // Automazioni
+        const autos = data.automazioni || [];
+        document.getElementById('autoGrid').innerHTML = autos.map(a => {
+            const cls = a.status === 'active' ? 'active' : 'paused';
+            return `<div class="auto-card">
+                <div class="auto-icon ${cls}"><i class="fas fa-${a.icon}"></i></div>
+                <div>
+                    <div class="auto-name">${a.nome}</div>
+                    <div class="auto-schedule">${a.schedule}</div>
+                </div>
+            </div>`;
+        }).join('');
+
+        // Prossimi passi
+        const steps = data.prossimiPassi || [];
+        document.getElementById('nextSteps').innerHTML = steps.map(s => `
+            <div class="lead-row">
+                <div>
+                    <div class="lead-name"><i class="fas fa-${s.icon}" style="color:${s.color};margin-right:8px;"></i>${s.nome}</div>
+                    <div class="lead-detail">${s.desc}</div>
+                </div>
+            </div>
+        `).join('');
+
+        // Attività recenti
+        const acts = data.attivitaRecenti || [];
+        document.getElementById('recentActivity').innerHTML = acts.map(a => `
+            <div class="activity-item">
+                <div class="activity-time">${a.tempo}</div>
+                <div>${a.azione}</div>
+            </div>
+        `).join('');
+    }
+    </script>
+</body>
+</html>

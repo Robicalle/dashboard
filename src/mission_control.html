@@ -90,25 +90,32 @@
         <!-- Stats -->
         <div class="stats-grid" id="statsGrid"></div>
         
-        <!-- Grafico barre mensile -->
+        <!-- Grafico barre: Consuntivo vs Budget vs 2025 -->
         <div class="section">
-            <h2><i class="fas fa-chart-bar"></i> Fatturato Mensile 2026</h2>
-            <div class="bar-container" id="barChart"></div>
+            <h2><i class="fas fa-chart-bar"></i> Fatturato 2026 vs Budget vs 2025</h2>
+            <div style="display:flex;gap:16px;margin-bottom:12px;font-size:0.75rem;">
+                <div><span style="display:inline-block;width:12px;height:12px;background:linear-gradient(180deg,#667eea,#764ba2);border-radius:2px;margin-right:4px;vertical-align:middle;"></span>Consuntivo 2026</div>
+                <div><span style="display:inline-block;width:12px;height:12px;background:#334155;border:1px solid #667eea;border-radius:2px;margin-right:4px;vertical-align:middle;"></span>Budget 2026</div>
+                <div><span style="display:inline-block;width:12px;height:12px;background:#475569;border-radius:2px;margin-right:4px;vertical-align:middle;"></span>2025</div>
+            </div>
+            <div class="bar-container" id="barChart" style="height:220px;"></div>
         </div>
         
-        <!-- Tabella mensile -->
+        <!-- Tabella mensile con budget -->
         <div class="section">
-            <h2><i class="fas fa-table"></i> Dettaglio per Gruppo</h2>
+            <h2><i class="fas fa-table"></i> Dettaglio Mensile</h2>
             <div style="overflow-x: auto;">
                 <table id="monthlyTable">
                     <thead>
                         <tr>
                             <th>Mese</th>
                             <th class="text-right">G10 Macchine</th>
-                            <th class="text-right">G40 Consumabili</th>
+                            <th class="text-right">G40 Consum.</th>
                             <th class="text-right">G50 Ricambi</th>
-                            <th class="text-right">G60 Etichette</th>
-                            <th class="text-right">Totale</th>
+                            <th class="text-right">G60 Etich.</th>
+                            <th class="text-right">Consuntivo</th>
+                            <th class="text-right">Budget</th>
+                            <th class="text-right">Δ%</th>
                         </tr>
                     </thead>
                     <tbody id="monthlyBody"></tbody>
@@ -146,128 +153,115 @@
     </div>
 
     <script>
-    // Carica dati dal JSON
     fetch('dashboard_data.json')
         .then(r => r.json())
         .then(data => render(data))
         .catch(e => {
-            // Fallback: dati inline
-            console.error('Errore caricamento JSON:', e);
-            document.querySelector('.container').innerHTML = '<div class="section"><h2>Errore caricamento dati</h2><p>dashboard_data.json non trovato.</p></div>';
+            document.querySelector('.container').innerHTML = '<div class="section"><h2>Errore caricamento dati</h2></div>';
         });
 
     function fmt(n) {
-        if (n === undefined || n === null) return '€0';
-        return '€' + Math.round(n).toLocaleString('it-IT');
+        if (n === undefined || n === null || isNaN(n)) return '\u20AC0';
+        return '\u20AC' + Math.round(n).toLocaleString('it-IT');
     }
 
     function render(data) {
-        // Last update
         document.getElementById('lastUpdate').textContent = 'Ultimo aggiornamento: ' + (data.lastUpdate || '-');
 
-        // Stats cards
         const stats = data.stats || {};
         const mesi = data.mesi || [];
+        const budgetAnnuale = data.budgetAnnuale || 2600000;
         const meseCorrente = mesi.filter(m => m.fatturato > 0).pop();
-        
-        document.getElementById('statsGrid').innerHTML = `
-            <div class="stat-card">
-                <div class="stat-label">Fatturato YTD 2026</div>
-                <div class="stat-value green">${fmt(stats.fatturato)}</div>
-            </div>
-<!-- macchine rimosso -->
-<!-- leasing rimosso -->
-            <div class="stat-card">
-                <div class="stat-label">Mese corrente${meseCorrente ? ' (' + meseCorrente.mese + ')' : ''}</div>
-                <div class="stat-value orange">${meseCorrente ? fmt(meseCorrente.fatturato) : '€0'}</div>
-            </div>
-        `;
+        const budgetYTD = mesi.filter(m => m.fatturato > 0).reduce((s,m) => s + (m.budget||0), 0);
+        const deltaYTD = budgetYTD > 0 ? ((stats.fatturato - budgetYTD) / budgetYTD * 100).toFixed(1) : 0;
+        const deltaColor = deltaYTD >= 0 ? '#4ade80' : '#f87171';
+        const deltaSign = deltaYTD >= 0 ? '+' : '';
 
-        // Bar chart
-        const maxFat = Math.max(...mesi.map(m => m.fatturato), 1);
-        const mesiLabels = ['Gen','Feb','Mar','Apr','Mag','Giu','Lug','Ago','Set','Ott','Nov','Dic'];
-        document.getElementById('barChart').innerHTML = mesi.map((m, i) => {
-            const h = m.fatturato > 0 ? Math.max((m.fatturato / maxFat) * 160, 4) : 2;
-            const color = m.fatturato > 0 ? '' : 'background: #334155;';
-            return `<div class="bar-wrapper">
-                <div class="bar-value">${m.fatturato > 0 ? fmt(m.fatturato) : ''}</div>
-                <div class="bar" style="height:${h}px;${color}"></div>
-                <div class="bar-label">${mesiLabels[i]}</div>
-            </div>`;
-        }).join('');
+        document.getElementById('statsGrid').innerHTML =
+            '<div class="stat-card"><div class="stat-label">Fatturato YTD 2026</div><div class="stat-value green">' + fmt(stats.fatturato) + '</div></div>' +
+            '<div class="stat-card"><div class="stat-label">Budget YTD</div><div class="stat-value blue">' + fmt(budgetYTD) + '</div></div>' +
+            '<div class="stat-card"><div class="stat-label">\u0394 vs Budget</div><div class="stat-value" style="color:' + deltaColor + '">' + deltaSign + deltaYTD + '%</div></div>' +
+            '<div class="stat-card"><div class="stat-label">Obiettivo ' + (data.anno||2026) + '</div><div class="stat-value purple">' + fmt(budgetAnnuale) + '</div></div>';
 
-        // Monthly table
-        let totG10=0, totG40=0, totG50=0, totG60=0, totAll=0;
-        let rows = '';
-        mesi.forEach(m => {
-            if (m.fatturato > 0) {
-                totG10 += m.gruppo10; totG40 += m.gruppo40; totG50 += m.gruppo50; totG60 += m.gruppo60; totAll += m.fatturato;
-                rows += `<tr>
-                    <td>${m.mese}</td>
-                    <td class="text-right text-blue">${fmt(m.gruppo10)}</td>
-                    <td class="text-right text-green">${fmt(m.gruppo40)}</td>
-                    <td class="text-right text-yellow">${fmt(m.gruppo50)}</td>
-                    <td class="text-right text-purple">${fmt(m.gruppo60)}</td>
-                    <td class="text-right font-bold">${fmt(m.fatturato)}</td>
-                </tr>`;
+        // Bar chart: 3 barre per mese (consuntivo, budget, 2025)
+        var maxVal = Math.max(...mesi.map(m => Math.max(m.fatturato||0, m.budget||0, m.storico2025||0)), 1);
+        var mesiLabels = ['Gen','Feb','Mar','Apr','Mag','Giu','Lug','Ago','Set','Ott','Nov','Dic'];
+        var chartHtml = '';
+        mesi.forEach(function(m, i) {
+            var hC = Math.max((m.fatturato||0) / maxVal * 200, 2);
+            var hB = Math.max((m.budget||0) / maxVal * 200, 2);
+            var h25 = Math.max((m.storico2025||0) / maxVal * 200, 2);
+            var valLabel = m.fatturato > 0 ? fmt(m.fatturato) : '';
+            chartHtml += '<div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:2px;">' +
+                '<div style="font-size:0.6rem;color:#e2e8f0;font-weight:600;min-height:14px;">' + valLabel + '</div>' +
+                '<div style="display:flex;align-items:flex-end;gap:2px;height:200px;">' +
+                '<div style="width:12px;height:' + hC + 'px;background:linear-gradient(180deg,#667eea,#764ba2);border-radius:2px 2px 0 0;"></div>' +
+                '<div style="width:12px;height:' + hB + 'px;background:#1e293b;border:1px solid #667eea;border-radius:2px 2px 0 0;"></div>' +
+                '<div style="width:12px;height:' + h25 + 'px;background:#475569;border-radius:2px 2px 0 0;"></div>' +
+                '</div>' +
+                '<div style="font-size:0.65rem;color:#94a3b8;">' + mesiLabels[i] + '</div></div>';
+        });
+        document.getElementById('barChart').innerHTML = chartHtml;
+
+        // Monthly table with budget
+        var totG10=0, totG40=0, totG50=0, totG60=0, totAll=0, totBudget=0;
+        var rows = '';
+        mesi.forEach(function(m) {
+            if (m.fatturato > 0 || (m.budget && m.budget > 0)) {
+                totG10 += m.gruppo10||0; totG40 += m.gruppo40||0; totG50 += m.gruppo50||0; totG60 += m.gruppo60||0; totAll += m.fatturato||0; totBudget += m.budget||0;
+                var delta = m.budget > 0 ? ((m.fatturato - m.budget) / m.budget * 100).toFixed(1) : '-';
+                var dColor = delta >= 0 ? 'color:#4ade80' : 'color:#f87171';
+                var dText = delta === '-' ? '-' : (delta >= 0 ? '+' : '') + delta + '%';
+                rows += '<tr>' +
+                    '<td>' + m.mese + '</td>' +
+                    '<td class="text-right text-blue">' + fmt(m.gruppo10) + '</td>' +
+                    '<td class="text-right text-green">' + fmt(m.gruppo40) + '</td>' +
+                    '<td class="text-right text-yellow">' + fmt(m.gruppo50) + '</td>' +
+                    '<td class="text-right text-purple">' + fmt(m.gruppo60) + '</td>' +
+                    '<td class="text-right font-bold">' + fmt(m.fatturato) + '</td>' +
+                    '<td class="text-right text-dim">' + fmt(m.budget) + '</td>' +
+                    '<td class="text-right" style="' + dColor + ';font-weight:700">' + dText + '</td></tr>';
             }
         });
-        rows += `<tr class="total-row">
-            <td>TOTALE YTD</td>
-            <td class="text-right text-blue">${fmt(totG10)}</td>
-            <td class="text-right text-green">${fmt(totG40)}</td>
-            <td class="text-right text-yellow">${fmt(totG50)}</td>
-            <td class="text-right text-purple">${fmt(totG60)}</td>
-            <td class="text-right">${fmt(totAll)}</td>
-        </tr>`;
+        var dTot = totBudget > 0 ? ((totAll - totBudget) / totBudget * 100).toFixed(1) : '-';
+        var dTotColor = dTot >= 0 ? 'color:#4ade80' : 'color:#f87171';
+        var dTotText = dTot === '-' ? '-' : (dTot >= 0 ? '+' : '') + dTot + '%';
+        rows += '<tr class="total-row"><td>TOTALE YTD</td>' +
+            '<td class="text-right text-blue">' + fmt(totG10) + '</td>' +
+            '<td class="text-right text-green">' + fmt(totG40) + '</td>' +
+            '<td class="text-right text-yellow">' + fmt(totG50) + '</td>' +
+            '<td class="text-right text-purple">' + fmt(totG60) + '</td>' +
+            '<td class="text-right">' + fmt(totAll) + '</td>' +
+            '<td class="text-right text-dim">' + fmt(totBudget) + '</td>' +
+            '<td class="text-right" style="' + dTotColor + ';font-weight:700">' + dTotText + '</td></tr>';
         document.getElementById('monthlyBody').innerHTML = rows;
 
         // Lead prioritari
-        const leads = data.leadPrioritari || [];
-        document.getElementById('leadList').innerHTML = leads.map(l => {
-            const badgeClass = l.priorita === 'high' ? 'badge-red' : l.priorita === 'medium' ? 'badge-yellow' : 'badge-green';
-            const badgeText = l.priorita === 'high' ? 'CALDO' : l.priorita === 'medium' ? 'TIEPIDO' : 'FREDDO';
-            return `<div class="lead-row">
-                <div>
-                    <div class="lead-name">${l.azienda}</div>
-                    <div class="lead-detail">${l.contatto || '-'} — ${l.prodotto || '-'}</div>
-                </div>
-                <span class="badge ${badgeClass}">${badgeText}</span>
-            </div>`;
+        var leads = data.leadPrioritari || [];
+        document.getElementById('leadList').innerHTML = leads.map(function(l) {
+            var bc = l.priorita === 'high' ? 'badge-red' : l.priorita === 'medium' ? 'badge-yellow' : 'badge-green';
+            var bt = l.priorita === 'high' ? 'CALDO' : l.priorita === 'medium' ? 'TIEPIDO' : 'FREDDO';
+            return '<div class="lead-row"><div><div class="lead-name">' + l.azienda + '</div><div class="lead-detail">' + (l.contatto||'-') + ' \u2014 ' + (l.prodotto||'-') + '</div></div><span class="badge ' + bc + '">' + bt + '</span></div>';
         }).join('');
 
         // Automazioni
-        const autos = data.automazioni || [];
-        document.getElementById('autoGrid').innerHTML = autos.map(a => {
-            const cls = a.status === 'active' ? 'active' : 'paused';
-            return `<div class="auto-card">
-                <div class="auto-icon ${cls}"><i class="fas fa-${a.icon}"></i></div>
-                <div>
-                    <div class="auto-name">${a.nome}</div>
-                    <div class="auto-schedule">${a.schedule}</div>
-                </div>
-            </div>`;
+        var autos = data.automazioni || [];
+        document.getElementById('autoGrid').innerHTML = autos.map(function(a) {
+            var cls = a.status === 'active' ? 'active' : 'paused';
+            return '<div class="auto-card"><div class="auto-icon ' + cls + '"><i class="fas fa-' + a.icon + '"></i></div><div><div class="auto-name">' + a.nome + '</div><div class="auto-schedule">' + a.schedule + '</div></div></div>';
         }).join('');
 
         // Prossimi passi
-        const steps = data.prossimiPassi || [];
-        document.getElementById('nextSteps').innerHTML = steps.map(s => `
-            <div class="lead-row">
-                <div>
-                    <div class="lead-name"><i class="fas fa-${s.icon}" style="color:${s.color};margin-right:8px;"></i>${s.nome}</div>
-                    <div class="lead-detail">${s.desc}</div>
-                </div>
-            </div>
-        `).join('');
+        var steps = data.prossimiPassi || [];
+        document.getElementById('nextSteps').innerHTML = steps.map(function(s) {
+            return '<div class="lead-row"><div><div class="lead-name"><i class="fas fa-' + s.icon + '" style="color:' + s.color + ';margin-right:8px;"></i>' + s.nome + '</div><div class="lead-detail">' + s.desc + '</div></div></div>';
+        }).join('');
 
-        // Attività recenti
-        const acts = data.attivitaRecenti || [];
-        document.getElementById('recentActivity').innerHTML = acts.map(a => `
-            <div class="activity-item">
-                <div class="activity-time">${a.tempo}</div>
-                <div>${a.azione}</div>
-            </div>
-        `).join('');
+        // Attivita recenti
+        var acts = data.attivitaRecenti || [];
+        document.getElementById('recentActivity').innerHTML = acts.map(function(a) {
+            return '<div class="activity-item"><div class="activity-time">' + a.tempo + '</div><div>' + a.azione + '</div></div>';
+        }).join('');
     }
     </script>
 </body>

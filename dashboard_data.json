@@ -144,7 +144,9 @@
                      "gruppo10":  107085.00,
                      "fatturato":  195275.94,
                      "gruppo50":  5961.96,
-                     "gruppo60":  2317.00
+                     "gruppo60":  2317.00,
+                     "budget":  155206.47,
+                     "storico2025":  247124.09
                  },
                  {
                      "mese":  "Febbraio",
@@ -152,7 +154,9 @@
                      "gruppo10":  0.00,
                      "fatturato":  34663.35,
                      "gruppo50":  983.50,
-                     "gruppo60":  0.00
+                     "gruppo60":  0.00,
+                     "budget":  166250.77,
+                     "storico2025":  257813.72
                  },
                  {
                      "mese":  "Marzo",
@@ -160,7 +164,9 @@
                      "gruppo10":  0,
                      "fatturato":  0,
                      "gruppo50":  0,
-                     "gruppo60":  0
+                     "gruppo60":  0,
+                     "budget":  191268.32,
+                     "storico2025":  244677.72
                  },
                  {
                      "mese":  "Aprile",
@@ -168,7 +174,9 @@
                      "gruppo10":  0,
                      "fatturato":  0,
                      "gruppo50":  0,
-                     "gruppo60":  0
+                     "gruppo60":  0,
+                     "budget":  244514.09,
+                     "storico2025":  94459.22
                  },
                  {
                      "mese":  "Maggio",
@@ -176,7 +184,9 @@
                      "gruppo10":  0,
                      "fatturato":  0,
                      "gruppo50":  0,
-                     "gruppo60":  0
+                     "gruppo60":  0,
+                     "budget":  224489.52,
+                     "storico2025":  175178.6
                  },
                  {
                      "mese":  "Giugno",
@@ -184,7 +194,9 @@
                      "gruppo10":  0,
                      "fatturato":  0,
                      "gruppo50":  0,
-                     "gruppo60":  0
+                     "gruppo60":  0,
+                     "budget":  175217.7,
+                     "storico2025":  232156.53
                  },
                  {
                      "mese":  "Luglio",
@@ -192,7 +204,9 @@
                      "gruppo10":  0,
                      "fatturato":  0,
                      "gruppo50":  0,
-                     "gruppo60":  0
+                     "gruppo60":  0,
+                     "budget":  357794.86,
+                     "storico2025":  403585.25
                  },
                  {
                      "mese":  "Agosto",
@@ -200,7 +214,9 @@
                      "gruppo10":  0,
                      "fatturato":  0,
                      "gruppo50":  0,
-                     "gruppo60":  0
+                     "gruppo60":  0,
+                     "budget":  50348.72,
+                     "storico2025":  30234.5
                  },
                  {
                      "mese":  "Settembre",
@@ -208,7 +224,9 @@
                      "gruppo10":  0,
                      "fatturato":  0,
                      "gruppo50":  0,
-                     "gruppo60":  0
+                     "gruppo60":  0,
+                     "budget":  221247.54,
+                     "storico2025":  262271.64
                  },
                  {
                      "mese":  "Ottobre",
@@ -216,7 +234,9 @@
                      "gruppo10":  0,
                      "fatturato":  0,
                      "gruppo50":  0,
-                     "gruppo60":  0
+                     "gruppo60":  0,
+                     "budget":  315863.36,
+                     "storico2025":  362273.74
                  },
                  {
                      "mese":  "Novembre",
@@ -224,7 +244,9 @@
                      "gruppo10":  0,
                      "fatturato":  0,
                      "gruppo50":  0,
-                     "gruppo60":  0
+                     "gruppo60":  0,
+                     "budget":  250251.14,
+                     "storico2025":  364472.17
                  },
                  {
                      "mese":  "Dicembre",
@@ -232,7 +254,10 @@
                      "gruppo10":  0,
                      "fatturato":  0,
                      "gruppo50":  0,
-                     "gruppo60":  0
+                     "gruppo60":  0,
+                     "budget":  247547.51,
+                     "storico2025":  115588.99
                  }
-             ]
+             ],
+    "budgetAnnuale":  2600000
 }

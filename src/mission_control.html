@@ -173,15 +173,18 @@
         const mesi = data.mesi || [];
         const budgetAnnuale = data.budgetAnnuale || 2600000;
         const prevAnnuale = data.previsioneAnnuale || 0;
-        const budgetYTD = mesi.filter(m => m.fatturato > 0).reduce((s,m) => s + (m.budget||0), 0);
-        const deltaYTD = budgetYTD > 0 ? ((stats.fatturato - budgetYTD) / budgetYTD * 100).toFixed(1) : 0;
+        const meseCorrente = new Date().getMonth(); // 0-based (0=Gen, 1=Feb...)
+        const mesiChiusi = mesi.filter((m, i) => i < meseCorrente && m.fatturato > 0);
+        const fattChiusi = mesiChiusi.reduce((s,m) => s + (m.fatturato||0), 0);
+        const budgetYTD = mesiChiusi.reduce((s,m) => s + (m.budgetOriginale||m.budget||0), 0);
+        const deltaYTD = budgetYTD > 0 ? ((fattChiusi - budgetYTD) / budgetYTD * 100).toFixed(1) : 0;
         const deltaColor = deltaYTD >= 0 ? '#4ade80' : '#f87171';
         const deltaSign = deltaYTD >= 0 ? '+' : '';
         const prevColor = prevAnnuale >= budgetAnnuale ? '#4ade80' : '#fb923c';
 
         document.getElementById('statsGrid').innerHTML =
             '<div class="stat-card"><div class="stat-label">Fatturato YTD 2026</div><div class="stat-value green">' + fmt(stats.fatturato) + '</div></div>' +
-            '<div class="stat-card"><div class="stat-label">\u0394 vs Budget YTD</div><div class="stat-value" style="color:' + deltaColor + '">' + deltaSign + deltaYTD + '%</div><div style="font-size:0.75rem;color:#94a3b8;margin-top:4px;">Budget YTD: ' + fmt(budgetYTD) + '</div></div>' +
+            '<div class="stat-card"><div class="stat-label">\u0394 vs Budget (mesi chiusi)</div><div class="stat-value" style="color:' + deltaColor + '">' + deltaSign + deltaYTD + '%</div><div style="font-size:0.75rem;color:#94a3b8;margin-top:4px;">' + fmt(fattChiusi) + ' vs ' + fmt(budgetYTD) + '</div></div>' +
             '<div class="stat-card"><div class="stat-label">Proiezione Annuale</div><div class="stat-value" style="color:' + prevColor + '">' + fmt(prevAnnuale) + '</div><div style="font-size:0.75rem;color:#94a3b8;margin-top:4px;">su andamento + stagionalità</div></div>' +
             '<div class="stat-card"><div class="stat-label">Obiettivo ' + (data.anno||2026) + '</div><div class="stat-value purple">' + fmt(budgetAnnuale) + '</div><div style="font-size:0.75rem;color:#94a3b8;margin-top:4px;">Residuo: ' + fmt(data.budgetResiduo||0) + '</div></div>';
 

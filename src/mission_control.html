@@ -179,10 +179,7 @@
                 <div class="stat-label">Macchine (G10) YTD</div>
                 <div class="stat-value blue">${fmt(stats.macchineVendute)}</div>
             </div>
-            <div class="stat-card">
-                <div class="stat-label">Leasing</div>
-                <div class="stat-value purple">${stats.leasingOperazioni || 0} op. — ${fmt(stats.leasingValore)}</div>
-            </div>
+<!-- leasing rimosso -->
             <div class="stat-card">
                 <div class="stat-label">Mese corrente${meseCorrente ? ' (' + meseCorrente.mese + ')' : ''}</div>
                 <div class="stat-value orange">${meseCorrente ? fmt(meseCorrente.fatturato) : '€0'}</div>

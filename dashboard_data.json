@@ -1,5 +1,5 @@
 ﻿{
-    "lastUpdate":  "2026-02-09T16:38:37",
+    "lastUpdate":  "2026-02-09T16:55:23",
     "anno":  2026,
     "stats":  {
                   "fatturato":  230659.29,
@@ -91,6 +91,10 @@
                     ],
     "attivitaRecenti":  [
                             {
+                                "tempo":  "09/02 16:55",
+                                "azione":  "Auto-refresh dati database"
+                            },
+                            {
                                 "tempo":  "09/02 16:38",
                                 "azione":  "Auto-refresh dati database"
                             },
@@ -105,10 +109,6 @@
                             {
                                 "tempo":  "Oggi, 21:49",
                                 "azione":  "Attivato cron auto-refresh dashboard"
-                            },
-                            {
-                                "tempo":  "Oggi, 21:07",
-                                "azione":  "Creato Excel lead (396 contatti)"
                             }
                         ],
     "prossimiPassi":  [
@@ -158,8 +158,8 @@
                      "gruppo40":  34399.85,
                      "gruppo10":  0.00,
                      "fatturato":  35383.35,
-                     "budget":  166251.8,
-                     "previsione":  35383.35,
+                     "budget":  163527.02,
+                     "previsione":  209172.12,
                      "mese":  "Febbraio",
                      "gruppo60":  0.00
                  },
@@ -170,8 +170,8 @@
                      "gruppo40":  0,
                      "gruppo10":  0,
                      "fatturato":  0,
-                     "budget":  198891.04,
-                     "previsione":  137243.01,
+                     "budget":  188134.20,
+                     "previsione":  240647.87,
                      "mese":  "Marzo",
                      "gruppo60":  0
                  },
@@ -182,8 +182,8 @@
                      "gruppo40":  0,
                      "gruppo10":  0,
                      "fatturato":  0,
-                     "budget":  254258.26,
-                     "previsione":  175448.67,
+                     "budget":  240506.93,
+                     "previsione":  307639.34,
                      "mese":  "Aprile",
                      "gruppo60":  0
                  },
@@ -194,8 +194,8 @@
                      "gruppo40":  0,
                      "gruppo10":  0,
                      "fatturato":  0,
-                     "budget":  233435.06,
-                     "previsione":  161079.80,
+                     "budget":  220809.93,
+                     "previsione":  282444.35,
                      "mese":  "Maggio",
                      "gruppo60":  0
                  },
@@ -206,8 +206,8 @@
                      "gruppo40":  0,
                      "gruppo10":  0,
                      "fatturato":  0,
-                     "budget":  182198.95,
-                     "previsione":  125724.78,
+                     "budget":  172344.89,
+                     "previsione":  220451.31,
                      "mese":  "Giugno",
                      "gruppo60":  0
                  },
@@ -218,8 +218,8 @@
                      "gruppo40":  0,
                      "gruppo10":  0,
                      "fatturato":  0,
-                     "budget":  372051.83,
-                     "previsione":  256731.08,
+                     "budget":  351929.74,
+                     "previsione":  450163.46,
                      "mese":  "Luglio",
                      "gruppo60":  0
                  },
@@ -230,8 +230,8 @@
                      "gruppo40":  0,
                      "gruppo10":  0,
                      "fatturato":  0,
-                     "budget":  52355.40,
-                     "previsione":  36127.38,
+                     "budget":  49523.80,
+                     "previsione":  63347.33,
                      "mese":  "Agosto",
                      "gruppo60":  0
                  },
@@ -242,8 +242,8 @@
                      "gruppo40":  0,
                      "gruppo10":  0,
                      "fatturato":  0,
-                     "budget":  230063.66,
-                     "previsione":  158753.40,
+                     "budget":  217620.87,
+                     "previsione":  278365.12,
                      "mese":  "Settembre",
                      "gruppo60":  0
                  },
@@ -254,8 +254,8 @@
                      "gruppo40":  0,
                      "gruppo10":  0,
                      "fatturato":  0,
-                     "budget":  328450.71,
-                     "previsione":  226644.51,
+                     "budget":  310686.75,
+                     "previsione":  397408.37,
                      "mese":  "Ottobre",
                      "gruppo60":  0
                  },
@@ -266,8 +266,8 @@
                      "gruppo40":  0,
                      "gruppo10":  0,
                      "fatturato":  0,
-                     "budget":  260222.42,
-                     "previsione":  179564.18,
+                     "budget":  246148.53,
+                     "previsione":  314855.67,
                      "mese":  "Novembre",
                      "gruppo60":  0
                  },
@@ -278,12 +278,12 @@
                      "gruppo40":  0,
                      "gruppo10":  0,
                      "fatturato":  0,
-                     "budget":  257413.37,
-                     "previsione":  177625.82,
+                     "budget":  243491.40,
+                     "previsione":  311456.86,
                      "mese":  "Dicembre",
                      "gruppo60":  0
                  }
              ],
-    "previsioneAnnuale":  1865602,
-    "budgetResiduo":  2369340.71
+    "previsioneAnnuale":  3271228,
+    "budgetResiduo":  2404724.06
 }

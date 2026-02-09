@@ -94,8 +94,8 @@
         <div class="section">
             <h2><i class="fas fa-chart-bar"></i> Fatturato 2026 vs Budget vs 2025</h2>
             <div style="display:flex;gap:16px;margin-bottom:12px;font-size:0.75rem;">
-                <div><span style="display:inline-block;width:12px;height:12px;background:linear-gradient(180deg,#667eea,#764ba2);border-radius:2px;margin-right:4px;vertical-align:middle;"></span>Consuntivo 2026</div>
-                <div><span style="display:inline-block;width:12px;height:12px;background:#334155;border:1px solid #667eea;border-radius:2px;margin-right:4px;vertical-align:middle;"></span>Budget 2026</div>
+                <div><span style="display:inline-block;width:12px;height:12px;background:linear-gradient(180deg,#4ade80,#22c55e);border-radius:2px;margin-right:4px;vertical-align:middle;"></span>Consuntivo 2026</div>
+                <div><span style="display:inline-block;width:12px;height:12px;background:linear-gradient(180deg,#60a5fa,#3b82f6);border-radius:2px;margin-right:4px;vertical-align:middle;"></span>Budget 2026</div>
                 <div><span style="display:inline-block;width:12px;height:12px;background:#475569;border-radius:2px;margin-right:4px;vertical-align:middle;"></span>2025</div>
             </div>
             <div class="bar-container" id="barChart" style="height:220px;"></div>
@@ -194,10 +194,10 @@
             var valLabel = m.fatturato > 0 ? fmt(m.fatturato) : '';
             chartHtml += '<div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:2px;">' +
                 '<div style="font-size:0.6rem;color:#e2e8f0;font-weight:600;min-height:14px;">' + valLabel + '</div>' +
-                '<div style="display:flex;align-items:flex-end;gap:2px;height:200px;">' +
-                '<div style="width:12px;height:' + hC + 'px;background:linear-gradient(180deg,#667eea,#764ba2);border-radius:2px 2px 0 0;"></div>' +
-                '<div style="width:12px;height:' + hB + 'px;background:#1e293b;border:1px solid #667eea;border-radius:2px 2px 0 0;"></div>' +
-                '<div style="width:12px;height:' + h25 + 'px;background:#475569;border-radius:2px 2px 0 0;"></div>' +
+                '<div style="display:flex;align-items:flex-end;gap:3px;height:200px;">' +
+                '<div style="width:14px;height:' + hC + 'px;background:linear-gradient(180deg,#4ade80,#22c55e);border-radius:3px 3px 0 0;box-shadow:0 0 8px rgba(74,222,128,0.3);"></div>' +
+                '<div style="width:14px;height:' + hB + 'px;background:linear-gradient(180deg,#60a5fa,#3b82f6);border-radius:3px 3px 0 0;box-shadow:0 0 8px rgba(96,165,250,0.3);"></div>' +
+                '<div style="width:14px;height:' + h25 + 'px;background:#475569;border-radius:3px 3px 0 0;"></div>' +
                 '</div>' +
                 '<div style="font-size:0.65rem;color:#94a3b8;">' + mesiLabels[i] + '</div></div>';
         });

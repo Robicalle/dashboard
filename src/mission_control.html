@@ -154,7 +154,7 @@
     </div>
 
     <script>
-    fetch('dashboard_data.json')
+    fetch('dashboard_data.json?v=' + Date.now())
         .then(r => r.json())
         .then(data => render(data))
         .catch(e => {

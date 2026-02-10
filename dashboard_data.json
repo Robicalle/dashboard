@@ -1,295 +1,295 @@
-{
-  "lastUpdate": "2026-02-09T16:55:23",
-  "anno": 2026,
-  "stats": {
-    "fatturato": 230659.29,
-    "leadAttivi": 332,
-    "macchineVendute": 107085,
-    "leasingOperazioni": 1,
-    "leasingValore": 56000
-  },
-  "conversionRate": {
-    "clienti": 64,
-    "totale": 396,
-    "percentuale": 16
-  },
-  "leadPrioritari": [
-    {
-      "azienda": "Scatola Perfetta",
-      "contatto": "Giorgio Gallo",
-      "prodotto": "AB2500 Box Maker",
-      "offerte": 4,
-      "priorita": "high"
-    },
-    {
-      "azienda": "Cartotecnica Abruzzese",
-      "contatto": "-",
-      "prodotto": "Stampa cartone",
-      "offerte": 3,
-      "priorita": "high"
-    },
-    {
-      "azienda": "Novello Imballaggi",
-      "contatto": "Alessandra Mura",
-      "prodotto": "Stampante",
-      "offerte": 3,
-      "priorita": "high"
-    },
-    {
-      "azienda": "Omnistampa",
-      "contatto": "Carlo",
-      "prodotto": "-",
-      "offerte": 3,
-      "priorita": "high"
-    },
-    {
-      "azienda": "Mediatipo",
-      "contatto": "Bepi Zonno",
-      "prodotto": "AB2500",
-      "offerte": 2,
-      "priorita": "medium"
-    },
-    {
-      "azienda": "Mediantes",
-      "contatto": "Dennis Castellan",
-      "prodotto": "AB2500",
-      "offerte": 2,
-      "priorita": "medium"
-    }
-  ],
-  "automazioni": [
-    {
-      "nome": "Dashboard Update",
-      "schedule": "Ogni giorno 8:00",
-      "status": "active",
-      "icon": "sync-alt"
-    },
-    {
-      "nome": "Lead Generation",
-      "schedule": "Ogni giorno 10:00",
-      "status": "active",
-      "icon": "search"
-    },
-    {
-      "nome": "News Digest",
-      "schedule": "Lun-Ven 7:00",
-      "status": "active",
-      "icon": "newspaper"
-    },
-    {
-      "nome": "Report Settimanale",
-      "schedule": "Lunedi 8:00",
-      "status": "active",
-      "icon": "chart-line"
-    },
-    {
-      "nome": "Check Email Inbox",
-      "schedule": "Non configurato",
-      "status": "paused",
-      "icon": "envelope"
-    },
-    {
-      "nome": "Sync Calendario",
-      "schedule": "Non configurato",
-      "status": "paused",
-      "icon": "calendar"
-    }
-  ],
-  "attivitaRecenti": [
-    {
-      "tempo": "09/02 16:55",
-      "azione": "Auto-refresh dati database"
-    },
-    {
-      "tempo": "09/02 16:38",
-      "azione": "Auto-refresh dati database"
-    },
-    {
-      "tempo": "Oggi, 21:55",
-      "azione": "Dashboard aggiornata a dati 2026"
-    },
-    {
-      "tempo": "Oggi, 21:52",
-      "azione": "Aggiornato OpenClaw a v2026.2.6-3"
-    },
-    {
-      "tempo": "Oggi, 21:49",
-      "azione": "Attivato cron auto-refresh dashboard"
-    }
-  ],
-  "prossimiPassi": [
-    {
-      "nome": "Richiamare Scatola Perfetta",
-      "desc": "4 offerte AB2500 senza chiusura - Giorgio Gallo",
-      "icon": "phone",
-      "color": "#ff6b6b"
-    },
-    {
-      "nome": "Approvare Post LinkedIn",
-      "desc": "3 bozze pronte: AB2500, EDM-650X, Combo",
-      "icon": "check-circle",
-      "color": "#667eea"
-    },
-    {
-      "nome": "Configurare Automazioni",
-      "desc": "Email check, calendario, heartbeat",
-      "icon": "cogs",
-      "color": "#4facfe"
-    },
-    {
-      "nome": "Report Vendite Q1",
-      "desc": "Confronto obiettivi vs risultati",
-      "icon": "database",
-      "color": "#43e97b"
-    }
-  ],
-  "budgetAnnuale": 2600000,
-  "mesi": [
-    {
-      "budgetOriginale": 155207,
-      "storico2025": 247124.09,
-      "gruppo50": 5961.96,
-      "gruppo40": 79911.98,
-      "gruppo10": 107085,
-      "fatturato": 195275.94,
-      "budget": 155207,
-      "previsione": 195275.94,
-      "mese": "Gennaio",
-      "gruppo60": 2317
-    },
-    {
-      "budgetOriginale": 166251.8,
-      "storico2025": 257813.72,
-      "gruppo50": 983.5,
-      "gruppo40": 34399.85,
-      "gruppo10": 0,
-      "fatturato": 35383.35,
-      "budget": 163527.02,
-      "previsione": 209172.12,
-      "mese": "Febbraio",
-      "gruppo60": 0
-    },
-    {
-      "budgetOriginale": 191269,
-      "storico2025": 244677.72,
-      "gruppo50": 0,
-      "gruppo40": 0,
-      "gruppo10": 0,
-      "fatturato": 0,
-      "budget": 188134.2,
-      "previsione": 240647.87,
-      "mese": "Marzo",
-      "gruppo60": 0
-    },
-    {
-      "budgetOriginale": 244514.4,
-      "storico2025": 94459.22,
-      "gruppo50": 0,
-      "gruppo40": 0,
-      "gruppo10": 0,
-      "fatturato": 0,
-      "budget": 240506.93,
-      "previsione": 307639.34,
-      "mese": "Aprile",
-      "gruppo60": 0
-    },
-    {
-      "budgetOriginale": 224489.2,
-      "storico2025": 175178.6,
-      "gruppo50": 0,
-      "gruppo40": 0,
-      "gruppo10": 0,
-      "fatturato": 0,
-      "budget": 220809.93,
-      "previsione": 282444.35,
-      "mese": "Maggio",
-      "gruppo60": 0
-    },
-    {
-      "budgetOriginale": 175216.6,
-      "storico2025": 232156.53,
-      "gruppo50": 0,
-      "gruppo40": 0,
-      "gruppo10": 0,
-      "fatturato": 0,
-      "budget": 172344.89,
-      "previsione": 220451.31,
-      "mese": "Giugno",
-      "gruppo60": 0
-    },
-    {
-      "budgetOriginale": 357793.8,
-      "storico2025": 403585.25,
-      "gruppo50": 0,
-      "gruppo40": 0,
-      "gruppo10": 0,
-      "fatturato": 0,
-      "budget": 351929.74,
-      "previsione": 450163.46,
-      "mese": "Luglio",
-      "gruppo60": 0
-    },
-    {
-      "budgetOriginale": 50349,
-      "storico2025": 30234.5,
-      "gruppo50": 0,
-      "gruppo40": 0,
-      "gruppo10": 0,
-      "fatturato": 0,
-      "budget": 49523.8,
-      "previsione": 63347.33,
-      "mese": "Agosto",
-      "gruppo60": 0
-    },
-    {
-      "budgetOriginale": 221247,
-      "storico2025": 262271.64,
-      "gruppo50": 0,
-      "gruppo40": 0,
-      "gruppo10": 0,
-      "fatturato": 0,
-      "budget": 217620.87,
-      "previsione": 278365.12,
-      "mese": "Settembre",
-      "gruppo60": 0
-    },
-    {
-      "budgetOriginale": 315863.6,
-      "storico2025": 362273.74,
-      "gruppo50": 0,
-      "gruppo40": 0,
-      "gruppo10": 0,
-      "fatturato": 0,
-      "budget": 310686.75,
-      "previsione": 397408.37,
-      "mese": "Ottobre",
-      "gruppo60": 0
-    },
-    {
-      "budgetOriginale": 250250,
-      "storico2025": 364472.17,
-      "gruppo50": 0,
-      "gruppo40": 0,
-      "gruppo10": 0,
-      "fatturato": 0,
-      "budget": 246148.53,
-      "previsione": 314855.67,
-      "mese": "Novembre",
-      "gruppo60": 0
-    },
-    {
-      "budgetOriginale": 247548.6,
-      "storico2025": 115588.99,
-      "gruppo50": 0,
-      "gruppo40": 0,
-      "gruppo10": 0,
-      "fatturato": 0,
-      "budget": 243491.4,
-      "previsione": 311456.86,
-      "mese": "Dicembre",
-      "gruppo60": 0
-    }
-  ],
-  "previsioneAnnuale": 3271228,
-  "budgetResiduo": 2404724.06
+﻿{
+    "lastUpdate":  "2026-02-10T08:00:05",
+    "anno":  2026,
+    "stats":  {
+                  "fatturato":  230659.29,
+                  "leadAttivi":  332,
+                  "macchineVendute":  107085.00,
+                  "leasingOperazioni":  1,
+                  "leasingValore":  56000.00
+              },
+    "conversionRate":  {
+                           "clienti":  64,
+                           "totale":  396,
+                           "percentuale":  16
+                       },
+    "leadPrioritari":  [
+                           {
+                               "azienda":  "Scatola Perfetta",
+                               "contatto":  "Giorgio Gallo",
+                               "prodotto":  "AB2500 Box Maker",
+                               "offerte":  4,
+                               "priorita":  "high"
+                           },
+                           {
+                               "azienda":  "Cartotecnica Abruzzese",
+                               "contatto":  "-",
+                               "prodotto":  "Stampa cartone",
+                               "offerte":  3,
+                               "priorita":  "high"
+                           },
+                           {
+                               "azienda":  "Novello Imballaggi",
+                               "contatto":  "Alessandra Mura",
+                               "prodotto":  "Stampante",
+                               "offerte":  3,
+                               "priorita":  "high"
+                           },
+                           {
+                               "azienda":  "Omnistampa",
+                               "contatto":  "Carlo",
+                               "prodotto":  "-",
+                               "offerte":  3,
+                               "priorita":  "high"
+                           },
+                           {
+                               "azienda":  "Mediatipo",
+                               "contatto":  "Bepi Zonno",
+                               "prodotto":  "AB2500",
+                               "offerte":  2,
+                               "priorita":  "medium"
+                           },
+                           {
+                               "azienda":  "Mediantes",
+                               "contatto":  "Dennis Castellan",
+                               "prodotto":  "AB2500",
+                               "offerte":  2,
+                               "priorita":  "medium"
+                           }
+                       ],
+    "automazioni":  [
+                        {
+                            "nome":  "Dashboard Update",
+                            "schedule":  "Ogni giorno 8:00",
+                            "status":  "active",
+                            "icon":  "sync-alt"
+                        },
+                        {
+                            "nome":  "Lead Generation",
+                            "schedule":  "Ogni giorno 10:00",
+                            "status":  "active",
+                            "icon":  "search"
+                        },
+                        {
+                            "nome":  "News Digest",
+                            "schedule":  "Lun-Ven 7:00",
+                            "status":  "active",
+                            "icon":  "newspaper"
+                        },
+                        {
+                            "nome":  "Report Settimanale",
+                            "schedule":  "Lunedi 8:00",
+                            "status":  "active",
+                            "icon":  "chart-line"
+                        },
+                        {
+                            "nome":  "Check Email Inbox",
+                            "schedule":  "Non configurato",
+                            "status":  "paused",
+                            "icon":  "envelope"
+                        },
+                        {
+                            "nome":  "Sync Calendario",
+                            "schedule":  "Non configurato",
+                            "status":  "paused",
+                            "icon":  "calendar"
+                        }
+                    ],
+    "attivitaRecenti":  [
+                            {
+                                "tempo":  "10/02 08:00",
+                                "azione":  "Auto-refresh dati database"
+                            },
+                            {
+                                "tempo":  "09/02 16:55",
+                                "azione":  "Auto-refresh dati database"
+                            },
+                            {
+                                "tempo":  "09/02 16:38",
+                                "azione":  "Auto-refresh dati database"
+                            },
+                            {
+                                "tempo":  "Oggi, 21:55",
+                                "azione":  "Dashboard aggiornata a dati 2026"
+                            },
+                            {
+                                "tempo":  "Oggi, 21:52",
+                                "azione":  "Aggiornato OpenClaw a v2026.2.6-3"
+                            }
+                        ],
+    "prossimiPassi":  [
+                          {
+                              "nome":  "Richiamare Scatola Perfetta",
+                              "desc":  "4 offerte AB2500 senza chiusura - Giorgio Gallo",
+                              "icon":  "phone",
+                              "color":  "#ff6b6b"
+                          },
+                          {
+                              "nome":  "Approvare Post LinkedIn",
+                              "desc":  "3 bozze pronte: AB2500, EDM-650X, Combo",
+                              "icon":  "check-circle",
+                              "color":  "#667eea"
+                          },
+                          {
+                              "nome":  "Configurare Automazioni",
+                              "desc":  "Email check, calendario, heartbeat",
+                              "icon":  "cogs",
+                              "color":  "#4facfe"
+                          },
+                          {
+                              "nome":  "Report Vendite Q1",
+                              "desc":  "Confronto obiettivi vs risultati",
+                              "icon":  "database",
+                              "color":  "#43e97b"
+                          }
+                      ],
+    "budgetAnnuale":  2600000,
+    "mesi":  [
+                 {
+                     "budgetOriginale":  155207,
+                     "storico2025":  247124.09,
+                     "gruppo50":  5961.96,
+                     "gruppo40":  79911.98,
+                     "gruppo10":  107085.00,
+                     "fatturato":  195275.94,
+                     "budget":  155207,
+                     "previsione":  195275.94,
+                     "mese":  "Gennaio",
+                     "gruppo60":  2317.00
+                 },
+                 {
+                     "budgetOriginale":  166251.8,
+                     "storico2025":  257813.72,
+                     "gruppo50":  983.50,
+                     "gruppo40":  34399.85,
+                     "gruppo10":  0.00,
+                     "fatturato":  35383.35,
+                     "budget":  163527.02,
+                     "previsione":  209172.12,
+                     "mese":  "Febbraio",
+                     "gruppo60":  0.00
+                 },
+                 {
+                     "budgetOriginale":  191269,
+                     "storico2025":  244677.72,
+                     "gruppo50":  0,
+                     "gruppo40":  0,
+                     "gruppo10":  0,
+                     "fatturato":  0,
+                     "budget":  188134.20,
+                     "previsione":  240647.87,
+                     "mese":  "Marzo",
+                     "gruppo60":  0
+                 },
+                 {
+                     "budgetOriginale":  244514.4,
+                     "storico2025":  94459.22,
+                     "gruppo50":  0,
+                     "gruppo40":  0,
+                     "gruppo10":  0,
+                     "fatturato":  0,
+                     "budget":  240506.93,
+                     "previsione":  307639.34,
+                     "mese":  "Aprile",
+                     "gruppo60":  0
+                 },
+                 {
+                     "budgetOriginale":  224489.2,
+                     "storico2025":  175178.6,
+                     "gruppo50":  0,
+                     "gruppo40":  0,
+                     "gruppo10":  0,
+                     "fatturato":  0,
+                     "budget":  220809.93,
+                     "previsione":  282444.35,
+                     "mese":  "Maggio",
+                     "gruppo60":  0
+                 },
+                 {
+                     "budgetOriginale":  175216.6,
+                     "storico2025":  232156.53,
+                     "gruppo50":  0,
+                     "gruppo40":  0,
+                     "gruppo10":  0,
+                     "fatturato":  0,
+                     "budget":  172344.89,
+                     "previsione":  220451.31,
+                     "mese":  "Giugno",
+                     "gruppo60":  0
+                 },
+                 {
+                     "budgetOriginale":  357793.8,
+                     "storico2025":  403585.25,
+                     "gruppo50":  0,
+                     "gruppo40":  0,
+                     "gruppo10":  0,
+                     "fatturato":  0,
+                     "budget":  351929.74,
+                     "previsione":  450163.46,
+                     "mese":  "Luglio",
+                     "gruppo60":  0
+                 },
+                 {
+                     "budgetOriginale":  50349,
+                     "storico2025":  30234.5,
+                     "gruppo50":  0,
+                     "gruppo40":  0,
+                     "gruppo10":  0,
+                     "fatturato":  0,
+                     "budget":  49523.80,
+                     "previsione":  63347.33,
+                     "mese":  "Agosto",
+                     "gruppo60":  0
+                 },
+                 {
+                     "budgetOriginale":  221247,
+                     "storico2025":  262271.64,
+                     "gruppo50":  0,
+                     "gruppo40":  0,
+                     "gruppo10":  0,
+                     "fatturato":  0,
+                     "budget":  217620.87,
+                     "previsione":  278365.12,
+                     "mese":  "Settembre",
+                     "gruppo60":  0
+                 },
+                 {
+                     "budgetOriginale":  315863.6,
+                     "storico2025":  362273.74,
+                     "gruppo50":  0,
+                     "gruppo40":  0,
+                     "gruppo10":  0,
+                     "fatturato":  0,
+                     "budget":  310686.75,
+                     "previsione":  397408.37,
+                     "mese":  "Ottobre",
+                     "gruppo60":  0
+                 },
+                 {
+                     "budgetOriginale":  250250,
+                     "storico2025":  364472.17,
+                     "gruppo50":  0,
+                     "gruppo40":  0,
+                     "gruppo10":  0,
+                     "fatturato":  0,
+                     "budget":  246148.53,
+                     "previsione":  314855.67,
+                     "mese":  "Novembre",
+                     "gruppo60":  0
+                 },
+                 {
+                     "budgetOriginale":  247548.6,
+                     "storico2025":  115588.99,
+                     "gruppo50":  0,
+                     "gruppo40":  0,
+                     "gruppo10":  0,
+                     "fatturato":  0,
+                     "budget":  243491.40,
+                     "previsione":  311456.86,
+                     "mese":  "Dicembre",
+                     "gruppo60":  0
+                 }
+             ],
+    "previsioneAnnuale":  3271228,
+    "budgetResiduo":  2404724.06
 }

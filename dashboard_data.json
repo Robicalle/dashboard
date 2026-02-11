@@ -1,10 +1,10 @@
 ﻿{
-    "lastUpdate":  "2026-02-10T08:00:05",
+    "lastUpdate":  "2026-02-11T14:32:28",
     "anno":  2026,
     "stats":  {
-                  "fatturato":  230659.29,
+                  "fatturato":  259462.29,
                   "leadAttivi":  332,
-                  "macchineVendute":  107085.00,
+                  "macchineVendute":  127980.00,
                   "leasingOperazioni":  1,
                   "leasingValore":  56000.00
               },
@@ -97,6 +97,10 @@
                     ],
     "attivitaRecenti":  [
                             {
+                                "tempo":  "11/02 14:32",
+                                "azione":  "Auto-refresh dati database"
+                            },
+                            {
                                 "tempo":  "10/02 08:00",
                                 "azione":  "Auto-refresh dati database"
                             },
@@ -111,10 +115,6 @@
                             {
                                 "tempo":  "Oggi, 21:55",
                                 "azione":  "Dashboard aggiornata a dati 2026"
-                            },
-                            {
-                                "tempo":  "Oggi, 21:52",
-                                "azione":  "Aggiornato OpenClaw a v2026.2.6-3"
                             }
                         ],
     "prossimiPassi":  [
@@ -160,10 +160,10 @@
                  {
                      "budgetOriginale":  166251.8,
                      "storico2025":  257813.72,
-                     "gruppo50":  983.50,
-                     "gruppo40":  34399.85,
-                     "gruppo10":  0.00,
-                     "fatturato":  35383.35,
+                     "gruppo50":  1633.50,
+                     "gruppo40":  41657.85,
+                     "gruppo10":  20895.00,
+                     "fatturato":  64186.35,
                      "budget":  163527.02,
                      "previsione":  209172.12,
                      "mese":  "Febbraio",

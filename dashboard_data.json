@@ -1,15 +1,23 @@
 {
-  "lastUpdate": "2026-02-12T18:41:32.668Z",
-  "fatturato2026": 262863,
-  "fatturatoMese": 35612,
+  "lastUpdate": "2026-02-12T18:51:02.183Z",
+  "fatturato2026": 275267,
+  "fatturatoMese": 75019,
   "macchineVendute": 3,
   "macchineValore": 126546,
   "pipelineCount": 21,
   "pipelineValore": 72411,
   "topClienti": [
     {
+      "nome": "MODULPRINT SNC",
+      "totale": 16838
+    },
+    {
       "nome": "DIPA S.R.L.S.",
       "totale": 5180
+    },
+    {
+      "nome": "AEB SPA",
+      "totale": 5113
     },
     {
       "nome": "TIPOGRAFIA 1000 IDEE ",
@@ -20,32 +28,24 @@
       "totale": 3990
     },
     {
+      "nome": "EURO ACCESSORI SRL",
+      "totale": 3870
+    },
+    {
       "nome": "GMG PRESS SRL",
       "totale": 3840
     },
     {
+      "nome": "LITOERRE SNC",
+      "totale": 2889
+    },
+    {
+      "nome": "FLAVIACART DI ANDREA AIELLO",
+      "totale": 1950
+    },
+    {
       "nome": "BORMAN ITALIANA SRL",
       "totale": 1920
-    },
-    {
-      "nome": "ADECO SRL",
-      "totale": 1720
-    },
-    {
-      "nome": "NOVAPRI SRL",
-      "totale": 1705
-    },
-    {
-      "nome": "CENTRO STYLE S.P.A.",
-      "totale": 1512
-    },
-    {
-      "nome": "GRAPHIKE' SRL",
-      "totale": 1260
-    },
-    {
-      "nome": "LABORATORI BIO LINE SRL",
-      "totale": 1100
     }
   ],
   "proforma": [

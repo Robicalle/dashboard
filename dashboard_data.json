@@ -1,177 +1,171 @@
 {
-  "lastUpdate": "2026-02-13T07:01:06.817Z",
-  "fatturato2026": 275267,
-  "fatturatoMese": 75019,
-  "macchineVendute": 3,
-  "macchineValore": 126546,
-  "pipelineCount": 21,
-  "pipelineValore": 72411,
-  "topClienti": [
-    {
-      "nome": "MODULPRINT SNC",
-      "totale": 16838
+    "lastUpdate": "2026-02-13T08:17:00",
+    "anno": 2026,
+    "stats": {
+        "fatturato": 275267,
+        "leadAttivi": 332,
+        "macchineVendute": 126546,
+        "leasingOperazioni": 1,
+        "leasingValore": 56000
     },
-    {
-      "nome": "DIPA S.R.L.S.",
-      "totale": 5180
+    "conversionRate": {
+        "clienti": 64,
+        "totale": 396,
+        "percentuale": 16
     },
-    {
-      "nome": "AEB SPA",
-      "totale": 5113
-    },
-    {
-      "nome": "TIPOGRAFIA 1000 IDEE ",
-      "totale": 4200
-    },
-    {
-      "nome": "OMEGA POINT SRL",
-      "totale": 3990
-    },
-    {
-      "nome": "EURO ACCESSORI SRL",
-      "totale": 3870
-    },
-    {
-      "nome": "GMG PRESS SRL",
-      "totale": 3840
-    },
-    {
-      "nome": "LITOERRE SNC",
-      "totale": 2889
-    },
-    {
-      "nome": "FLAVIACART DI ANDREA AIELLO",
-      "totale": 1950
-    },
-    {
-      "nome": "BORMAN ITALIANA SRL",
-      "totale": 1920
-    }
-  ],
-  "proforma": [
-    {
-      "cliente": "SC PLASTSISTEM SRL",
-      "doc": 21,
-      "data": "2026-02-12T00:00:00.000Z",
-      "totale": 640
-    },
-    {
-      "cliente": "SHENZHEN SUNTHINKS TECHNOLOGY CO., LTD",
-      "doc": 20,
-      "data": "2026-02-10T00:00:00.000Z",
-      "totale": 10
-    },
-    {
-      "cliente": "MARCELLINI FABIO",
-      "doc": 18,
-      "data": "2026-02-09T00:00:00.000Z",
-      "totale": 255
-    },
-    {
-      "cliente": "UAB SDA PAKUOTE",
-      "doc": 19,
-      "data": "2026-02-09T00:00:00.000Z",
-      "totale": 320
-    },
-    {
-      "cliente": "GREEN PAPER SRL",
-      "doc": 15,
-      "data": "2026-02-05T00:00:00.000Z",
-      "totale": 360
-    },
-    {
-      "cliente": "MERCO' SRL",
-      "doc": 16,
-      "data": "2026-02-05T00:00:00.000Z",
-      "totale": 260
-    },
-    {
-      "cliente": "PAPERBIT DI SCATTARETICA MARIA",
-      "doc": 17,
-      "data": "2026-02-05T00:00:00.000Z",
-      "totale": 60
-    },
-    {
-      "cliente": "ADORNI DISTRIBUZIONI GRAFICHE SRL",
-      "doc": 14,
-      "data": "2026-01-30T00:00:00.000Z",
-      "totale": 156
-    },
-    {
-      "cliente": "ALEGATES SRL",
-      "doc": 12,
-      "data": "2026-01-26T00:00:00.000Z",
-      "totale": 60
-    },
-    {
-      "cliente": "ITALTECNICA S.A.S.",
-      "doc": 13,
-      "data": "2026-01-26T00:00:00.000Z",
-      "totale": 78
-    },
-    {
-      "cliente": "ITALTECNICA S.A.S.",
-      "doc": 11,
-      "data": "2026-01-23T00:00:00.000Z",
-      "totale": 78
-    },
-    {
-      "cliente": "COMGRAF d.o.o.",
-      "doc": 9,
-      "data": "2026-01-21T00:00:00.000Z",
-      "totale": 417
-    },
-    {
-      "cliente": "EAGLES PACKAGING SERVICE SRL",
-      "doc": 10,
-      "data": "2026-01-21T00:00:00.000Z",
-      "totale": 540
-    },
-    {
-      "cliente": "PUBBLIESSE DI SAVATICCHIO SALVATORE",
-      "doc": 8,
-      "data": "2026-01-16T00:00:00.000Z",
-      "totale": 520
-    },
-    {
-      "cliente": "CSP PLUS s.r.o.",
-      "doc": 7,
-      "data": "2026-01-15T00:00:00.000Z",
-      "totale": 1112
-    },
-    {
-      "cliente": "IMPRONTA SAS",
-      "doc": 5,
-      "data": "2026-01-14T00:00:00.000Z",
-      "totale": 102
-    },
-    {
-      "cliente": "MARTIN PACKAGING LIMITED",
-      "doc": 6,
-      "data": "2026-01-14T00:00:00.000Z",
-      "totale": 57750
-    },
-    {
-      "cliente": "GIFT AND PREMIUM LIMITED",
-      "doc": 4,
-      "data": "2026-01-13T00:00:00.000Z",
-      "totale": 7620
-    },
-    {
-      "cliente": "MARCELLINI FABIO",
-      "doc": 2,
-      "data": "2026-01-13T00:00:00.000Z",
-      "totale": 491
-    },
-    {
-      "cliente": "SC PLASTSISTEM SRL",
-      "doc": 3,
-      "data": "2026-01-13T00:00:00.000Z",
-      "totale": 1192
-    }
-  ],
-  "leads": {
-    "total": 16,
-    "highPriority": 0
-  }
+    "leadPrioritari": [
+        { "azienda": "Scatola Perfetta", "contatto": "Giorgio Gallo", "prodotto": "AB2500 Box Maker", "offerte": 4, "priorita": "high" },
+        { "azienda": "Cartotecnica Abruzzese", "contatto": "-", "prodotto": "Stampa cartone", "offerte": 3, "priorita": "high" },
+        { "azienda": "Novello Imballaggi", "contatto": "Alessandra Mura", "prodotto": "Stampante", "offerte": 3, "priorita": "high" },
+        { "azienda": "Mediatipo", "contatto": "Bepi Zonno", "prodotto": "AB2500", "offerte": 2, "priorita": "medium" }
+    ],
+    "automazioni": [
+        { "nome": "Dashboard Update", "schedule": "Ogni giorno 8:00", "status": "active", "icon": "sync-alt" },
+        { "nome": "Digest News", "schedule": "Lun-Ven 7:00", "status": "active", "icon": "newspaper" },
+        { "nome": "Report Settimanale", "schedule": "Lunedì 8:00", "status": "active", "icon": "chart-line" },
+        { "nome": "Lead Generation", "schedule": "Ogni giorno 10:00", "status": "active", "icon": "user-plus" },
+        { "nome": "Lead Report", "schedule": "Ogni giorno 14:00", "status": "active", "icon": "file-alt" }
+    ],
+    "attivitaRecenti": [
+        { "tempo": "13/02 08:00", "azione": "Dashboard aggiornata da DB" },
+        { "tempo": "13/02 07:00", "azione": "Digest news packaging/etichette" },
+        { "tempo": "12/02 22:53", "azione": "Sito: cookie banner + dati societari" },
+        { "tempo": "12/02 08:00", "azione": "Dashboard aggiornata da DB" },
+        { "tempo": "11/02 14:32", "azione": "Auto-refresh dati database" }
+    ],
+    "prossimiPassi": [
+        { "nome": "Richiamare Scatola Perfetta", "desc": "4 offerte AB2500 - Giorgio Gallo", "icon": "phone", "color": "#ff6b6b" },
+        { "nome": "Configurare Shopify Buy Button", "desc": "E-commerce consumabili sul sito nuovo", "icon": "shopping-cart", "color": "#667eea" },
+        { "nome": "Mobile optimization check", "desc": "Verificare video hero compressi su mobile", "icon": "mobile-alt", "color": "#4facfe" },
+        { "nome": "Report Vendite Q1", "desc": "Confronto obiettivi vs risultati", "icon": "database", "color": "#43e97b" }
+    ],
+    "budgetAnnuale": 2600000,
+    "mesi": [
+        {
+            "mese": "Gennaio",
+            "budgetOriginale": 155207,
+            "storico2025": 247124.09,
+            "gruppo50": 5961.96,
+            "gruppo40": 79911.98,
+            "gruppo10": 107085.00,
+            "fatturato": 200248,
+            "budget": 155207,
+            "previsione": 200248,
+            "gruppo60": 2317.00
+        },
+        {
+            "mese": "Febbraio",
+            "budgetOriginale": 166251.8,
+            "storico2025": 257813.72,
+            "gruppo50": 983.50,
+            "gruppo40": 34399.85,
+            "gruppo10": 0,
+            "fatturato": 75019,
+            "budget": 163527.02,
+            "previsione": 209172.12,
+            "gruppo60": 0
+        },
+        {
+            "mese": "Marzo",
+            "budgetOriginale": 191269,
+            "storico2025": 244677.72,
+            "gruppo50": 0, "gruppo40": 0, "gruppo10": 0,
+            "fatturato": 0,
+            "budget": 188134.20,
+            "previsione": 240647.87,
+            "gruppo60": 0
+        },
+        {
+            "mese": "Aprile",
+            "budgetOriginale": 244514.4,
+            "storico2025": 94459.22,
+            "gruppo50": 0, "gruppo40": 0, "gruppo10": 0,
+            "fatturato": 0,
+            "budget": 240506.93,
+            "previsione": 307639.34,
+            "gruppo60": 0
+        },
+        {
+            "mese": "Maggio",
+            "budgetOriginale": 224489.2,
+            "storico2025": 175178.6,
+            "gruppo50": 0, "gruppo40": 0, "gruppo10": 0,
+            "fatturato": 0,
+            "budget": 220809.93,
+            "previsione": 282444.35,
+            "gruppo60": 0
+        },
+        {
+            "mese": "Giugno",
+            "budgetOriginale": 175216.6,
+            "storico2025": 232156.53,
+            "gruppo50": 0, "gruppo40": 0, "gruppo10": 0,
+            "fatturato": 0,
+            "budget": 172344.89,
+            "previsione": 220451.31,
+            "gruppo60": 0
+        },
+        {
+            "mese": "Luglio",
+            "budgetOriginale": 357793.8,
+            "storico2025": 403585.25,
+            "gruppo50": 0, "gruppo40": 0, "gruppo10": 0,
+            "fatturato": 0,
+            "budget": 351929.74,
+            "previsione": 450163.46,
+            "gruppo60": 0
+        },
+        {
+            "mese": "Agosto",
+            "budgetOriginale": 50349,
+            "storico2025": 30234.5,
+            "gruppo50": 0, "gruppo40": 0, "gruppo10": 0,
+            "fatturato": 0,
+            "budget": 49523.80,
+            "previsione": 63347.33,
+            "gruppo60": 0
+        },
+        {
+            "mese": "Settembre",
+            "budgetOriginale": 221247,
+            "storico2025": 262271.64,
+            "gruppo50": 0, "gruppo40": 0, "gruppo10": 0,
+            "fatturato": 0,
+            "budget": 217620.87,
+            "previsione": 278365.12,
+            "gruppo60": 0
+        },
+        {
+            "mese": "Ottobre",
+            "budgetOriginale": 315863.6,
+            "storico2025": 362273.74,
+            "gruppo50": 0, "gruppo40": 0, "gruppo10": 0,
+            "fatturato": 0,
+            "budget": 310686.75,
+            "previsione": 397408.37,
+            "gruppo60": 0
+        },
+        {
+            "mese": "Novembre",
+            "budgetOriginale": 250250,
+            "storico2025": 364472.17,
+            "gruppo50": 0, "gruppo40": 0, "gruppo10": 0,
+            "fatturato": 0,
+            "budget": 246148.53,
+            "previsione": 314855.67,
+            "gruppo60": 0
+        },
+        {
+            "mese": "Dicembre",
+            "budgetOriginale": 247548.6,
+            "storico2025": 115588.99,
+            "gruppo50": 0, "gruppo40": 0, "gruppo10": 0,
+            "fatturato": 0,
+            "budget": 243491.40,
+            "previsione": 311456.86,
+            "gruppo60": 0
+        }
+    ],
+    "previsioneAnnuale": 3271228,
+    "budgetResiduo": 2324733
 }

@@ -1,51 +1,51 @@
 {
-  "lastUpdate": "2026-02-12T23:17:06.950Z",
-  "fatturato2026": 380295,
-  "fatturatoMese": 88881,
-  "macchineVendute": 11,
-  "macchineValore": 138687,
+  "lastUpdate": "2026-02-13T07:01:06.817Z",
+  "fatturato2026": 275267,
+  "fatturatoMese": 75019,
+  "macchineVendute": 3,
+  "macchineValore": 126546,
   "pipelineCount": 21,
-  "pipelineValore": 73479,
+  "pipelineValore": 72411,
   "topClienti": [
     {
       "nome": "MODULPRINT SNC",
-      "totale": 20542
+      "totale": 16838
     },
     {
       "nome": "DIPA S.R.L.S.",
-      "totale": 6338
+      "totale": 5180
     },
     {
       "nome": "AEB SPA",
-      "totale": 6256
+      "totale": 5113
     },
     {
       "nome": "TIPOGRAFIA 1000 IDEE ",
-      "totale": 5124
+      "totale": 4200
     },
     {
       "nome": "OMEGA POINT SRL",
-      "totale": 4868
+      "totale": 3990
     },
     {
       "nome": "EURO ACCESSORI SRL",
-      "totale": 4740
+      "totale": 3870
     },
     {
       "nome": "GMG PRESS SRL",
-      "totale": 4685
+      "totale": 3840
     },
     {
       "nome": "LITOERRE SNC",
-      "totale": 3543
+      "totale": 2889
+    },
+    {
+      "nome": "FLAVIACART DI ANDREA AIELLO",
+      "totale": 1950
     },
     {
       "nome": "BORMAN ITALIANA SRL",
-      "totale": 2361
-    },
-    {
-      "nome": "ADECO SRL",
-      "totale": 2117
+      "totale": 1920
     }
   ],
   "proforma": [
@@ -53,7 +53,7 @@
       "cliente": "SC PLASTSISTEM SRL",
       "doc": 21,
       "data": "2026-02-12T00:00:00.000Z",
-      "totale": 675
+      "totale": 640
     },
     {
       "cliente": "SHENZHEN SUNTHINKS TECHNOLOGY CO., LTD",
@@ -65,85 +65,85 @@
       "cliente": "MARCELLINI FABIO",
       "doc": 18,
       "data": "2026-02-09T00:00:00.000Z",
-      "totale": 329
+      "totale": 255
     },
     {
       "cliente": "UAB SDA PAKUOTE",
       "doc": 19,
       "data": "2026-02-09T00:00:00.000Z",
-      "totale": 370
+      "totale": 320
     },
     {
       "cliente": "GREEN PAPER SRL",
       "doc": 15,
       "data": "2026-02-05T00:00:00.000Z",
-      "totale": 458
+      "totale": 360
     },
     {
       "cliente": "MERCO' SRL",
       "doc": 16,
       "data": "2026-02-05T00:00:00.000Z",
-      "totale": 336
+      "totale": 260
     },
     {
       "cliente": "PAPERBIT DI SCATTARETICA MARIA",
       "doc": 17,
       "data": "2026-02-05T00:00:00.000Z",
-      "totale": 92
+      "totale": 60
     },
     {
       "cliente": "ADORNI DISTRIBUZIONI GRAFICHE SRL",
       "doc": 14,
       "data": "2026-01-30T00:00:00.000Z",
-      "totale": 162
+      "totale": 156
     },
     {
       "cliente": "ALEGATES SRL",
       "doc": 12,
       "data": "2026-01-26T00:00:00.000Z",
-      "totale": 85
+      "totale": 60
     },
     {
       "cliente": "ITALTECNICA S.A.S.",
       "doc": 13,
       "data": "2026-01-26T00:00:00.000Z",
-      "totale": 107
+      "totale": 78
     },
     {
       "cliente": "ITALTECNICA S.A.S.",
       "doc": 11,
       "data": "2026-01-23T00:00:00.000Z",
-      "totale": 113
+      "totale": 78
     },
     {
       "cliente": "COMGRAF d.o.o.",
       "doc": 9,
       "data": "2026-01-21T00:00:00.000Z",
-      "totale": 432
+      "totale": 417
     },
     {
       "cliente": "EAGLES PACKAGING SERVICE SRL",
       "doc": 10,
       "data": "2026-01-21T00:00:00.000Z",
-      "totale": 677
+      "totale": 540
     },
     {
       "cliente": "PUBBLIESSE DI SAVATICCHIO SALVATORE",
       "doc": 8,
       "data": "2026-01-16T00:00:00.000Z",
-      "totale": 653
+      "totale": 520
     },
     {
       "cliente": "CSP PLUS s.r.o.",
       "doc": 7,
       "data": "2026-01-15T00:00:00.000Z",
-      "totale": 1147
+      "totale": 1112
     },
     {
       "cliente": "IMPRONTA SAS",
       "doc": 5,
       "data": "2026-01-14T00:00:00.000Z",
-      "totale": 124
+      "totale": 102
     },
     {
       "cliente": "MARTIN PACKAGING LIMITED",
@@ -152,32 +152,26 @@
       "totale": 57750
     },
     {
-      "cliente": "MARCELLINI FABIO",
-      "doc": 2,
-      "data": "2026-01-13T00:00:00.000Z",
-      "totale": 617
-    },
-    {
-      "cliente": "SC PLASTSISTEM SRL",
-      "doc": 3,
-      "data": "2026-01-13T00:00:00.000Z",
-      "totale": 1227
-    },
-    {
       "cliente": "GIFT AND PREMIUM LIMITED",
       "doc": 4,
       "data": "2026-01-13T00:00:00.000Z",
       "totale": 7620
     },
     {
-      "cliente": "MERCO' SRL",
-      "doc": 1,
-      "data": "2026-01-12T00:00:00.000Z",
-      "totale": 494
+      "cliente": "MARCELLINI FABIO",
+      "doc": 2,
+      "data": "2026-01-13T00:00:00.000Z",
+      "totale": 491
+    },
+    {
+      "cliente": "SC PLASTSISTEM SRL",
+      "doc": 3,
+      "data": "2026-01-13T00:00:00.000Z",
+      "totale": 1192
     }
   ],
   "leads": {
-    "total": 21,
+    "total": 16,
     "highPriority": 0
   }
 }

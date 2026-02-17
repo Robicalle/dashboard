@@ -1,5 +1,5 @@
 {
-    "lastUpdate": "2026-02-16T07:02:24",
+    "lastUpdate": "2026-02-17T07:01:29",
     "deals": [
         {
             "id": 1,
@@ -126,5 +126,31 @@
             "name": "Perso",
             "order": 7
         }
-    ]
+    ],
+    "proformaDB": {
+        "count": 22,
+        "valore": 73428,
+        "topProforma": [
+            {
+                "cliente": "MARTIN PACKAGING LIMITED",
+                "valore": 57750
+            },
+            {
+                "cliente": "GIFT AND PREMIUM LIMITED",
+                "valore": 7620
+            },
+            {
+                "cliente": "SC PLASTSISTEM SRL",
+                "valore": 1832
+            },
+            {
+                "cliente": "CSP PLUS s.r.o.",
+                "valore": 1112
+            },
+            {
+                "cliente": "EMMECI PACKAGING SRL",
+                "valore": 1040
+            }
+        ]
+    }
 }

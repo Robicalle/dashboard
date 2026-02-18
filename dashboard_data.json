@@ -1,9 +1,9 @@
 {
-    "lastUpdate": "2026-02-17T07:01:12",
+    "lastUpdate": "2026-02-18T10:27:00",
     "anno": 2026,
     "stats": {
-        "fatturato": 335251,
-        "leadAttivi": 139,
+        "fatturato": 338384,
+        "leadAttivi": 144,
         "macchineVendute": 194659,
         "leasingOperazioni": 1,
         "leasingValore": 56000
@@ -77,6 +77,10 @@
     ],
     "attivitaRecenti": [
         {
+            "tempo": "18/02 10:27",
+            "azione": "Dashboard aggiornata da DB"
+        },
+        {
             "tempo": "17/02 08:00",
             "azione": "Dashboard aggiornata da DB"
         },
@@ -91,10 +95,6 @@
         {
             "tempo": "13/02 07:00",
             "azione": "Digest news packaging/etichette"
-        },
-        {
-            "tempo": "12/02 22:53",
-            "azione": "Sito: cookie banner + dati societari"
         }
     ],
     "prossimiPassi": [
@@ -141,10 +141,10 @@
             "mese": "Febbraio",
             "budgetOriginale": 166251.8,
             "storico2025": 257813.72,
-            "gruppo50": 2550,
-            "gruppo40": 51476,
+            "gruppo50": 1550,
+            "gruppo40": 55608,
             "gruppo10": 89008,
-            "fatturato": 148146,
+            "fatturato": 151278,
             "budget": 163527.02,
             "previsione": 209172.12,
             "gruppo60": 3955

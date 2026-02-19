@@ -1,5 +1,5 @@
 {
-    "lastUpdate": "2026-02-18T10:27:00",
+    "lastUpdate": "2026-02-19T07:02",
     "deals": [
         {
             "id": 1,
@@ -152,5 +152,185 @@
                 "valore": 1040
             }
         ]
-    }
+    },
+    "summary": {
+        "count": 22,
+        "totale": 73428
+    },
+    "proforma": [
+        {
+            "numero": 22,
+            "data": "2026-02-16",
+            "cliente": "EMMECI PACKAGING SRL",
+            "valore": 1040
+        },
+        {
+            "numero": 21,
+            "data": "2026-02-12",
+            "cliente": "SC PLASTSISTEM SRL",
+            "valore": 640
+        },
+        {
+            "numero": 20,
+            "data": "2026-02-10",
+            "cliente": "SHENZHEN SUNTHINKS TECHNOLOGY CO., LTD",
+            "valore": 10
+        },
+        {
+            "numero": 18,
+            "data": "2026-02-09",
+            "cliente": "MARCELLINI FABIO",
+            "valore": 255
+        },
+        {
+            "numero": 19,
+            "data": "2026-02-09",
+            "cliente": "UAB SDA PAKUOTE",
+            "valore": 320
+        },
+        {
+            "numero": 15,
+            "data": "2026-02-05",
+            "cliente": "GREEN PAPER SRL",
+            "valore": 360
+        },
+        {
+            "numero": 16,
+            "data": "2026-02-05",
+            "cliente": "MERCO' SRL",
+            "valore": 260
+        },
+        {
+            "numero": 17,
+            "data": "2026-02-05",
+            "cliente": "PAPERBIT DI SCATTARETICA MARIA",
+            "valore": 60
+        },
+        {
+            "numero": 14,
+            "data": "2026-01-30",
+            "cliente": "ADORNI DISTRIBUZIONI GRAFICHE SRL",
+            "valore": 133
+        },
+        {
+            "numero": 12,
+            "data": "2026-01-26",
+            "cliente": "ALEGATES SRL",
+            "valore": 60
+        },
+        {
+            "numero": 13,
+            "data": "2026-01-26",
+            "cliente": "ITALTECNICA S.A.S.",
+            "valore": 78
+        },
+        {
+            "numero": 11,
+            "data": "2026-01-23",
+            "cliente": "ITALTECNICA S.A.S.",
+            "valore": 78
+        },
+        {
+            "numero": 9,
+            "data": "2026-01-21",
+            "cliente": "COMGRAF d.o.o.",
+            "valore": 417
+        },
+        {
+            "numero": 10,
+            "data": "2026-01-21",
+            "cliente": "EAGLES PACKAGING SERVICE SRL",
+            "valore": 540
+        },
+        {
+            "numero": 8,
+            "data": "2026-01-16",
+            "cliente": "PUBBLIESSE DI SAVATICCHIO SALVATORE",
+            "valore": 520
+        },
+        {
+            "numero": 7,
+            "data": "2026-01-15",
+            "cliente": "CSP PLUS s.r.o.",
+            "valore": 1112
+        },
+        {
+            "numero": 5,
+            "data": "2026-01-14",
+            "cliente": "IMPRONTA SAS",
+            "valore": 102
+        },
+        {
+            "numero": 6,
+            "data": "2026-01-14",
+            "cliente": "MARTIN PACKAGING LIMITED",
+            "valore": 57750
+        },
+        {
+            "numero": 2,
+            "data": "2026-01-13",
+            "cliente": "MARCELLINI FABIO",
+            "valore": 491
+        },
+        {
+            "numero": 3,
+            "data": "2026-01-13",
+            "cliente": "SC PLASTSISTEM SRL",
+            "valore": 1192
+        },
+        {
+            "numero": 4,
+            "data": "2026-01-13",
+            "cliente": "GIFT AND PREMIUM LIMITED",
+            "valore": 7620
+        },
+        {
+            "numero": 1,
+            "data": "2026-01-12",
+            "cliente": "MERCO' SRL",
+            "valore": 390
+        }
+    ],
+    "topClientiMese": [
+        {
+            "nome": "CREDEMLEASING SPA",
+            "totale": 54000
+        },
+        {
+            "nome": "OMEGA POINT SRL",
+            "totale": 19950
+        },
+        {
+            "nome": "MODULPRINT SNC",
+            "totale": 17607
+        },
+        {
+            "nome": "DIPA S.R.L.S.",
+            "totale": 5197
+        },
+        {
+            "nome": "AEB SPA",
+            "totale": 5113
+        },
+        {
+            "nome": "TIPOGRAFIA 1000 IDEE",
+            "totale": 4200
+        },
+        {
+            "nome": "EURO ACCESSORI SRL",
+            "totale": 3870
+        },
+        {
+            "nome": "GMG PRESS SRL",
+            "totale": 3840
+        },
+        {
+            "nome": "LITOERRE SNC",
+            "totale": 2889
+        },
+        {
+            "nome": "KEMPER SYSTEM ITALIA SRL",
+            "totale": 2800
+        }
+    ]
 }

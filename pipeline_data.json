@@ -1,145 +1,151 @@
 {
-    "lastUpdate": "2026-02-23T07:15",
+    "lastUpdate": "2026-02-23T12:56",
     "count": 23,
     "totale": 75565,
     "proforma": [
         {
+            "numero": 24,
+            "data": "2026-02-23",
+            "cliente": "SOPRA BUSINESS LTD",
+            "valore": 480
+        },
+        {
+            "numero": 23,
+            "data": "2026-02-20",
             "cliente": "CLASER PACK DI CORONO MAURO E C. SNC",
-            "doc": 23,
-            "data": "2026-02-20T00:00:00.000Z",
-            "totale": 799
+            "valore": 640
         },
         {
+            "numero": 22,
+            "data": "2026-02-16",
             "cliente": "EMMECI PACKAGING SRL",
-            "doc": 22,
-            "data": "2026-02-16T00:00:00.000Z",
-            "totale": 1287
+            "valore": 1040
         },
         {
+            "numero": 21,
+            "data": "2026-02-12",
             "cliente": "SC PLASTSISTEM SRL",
-            "doc": 21,
-            "data": "2026-02-12T00:00:00.000Z",
-            "totale": 675
+            "valore": 640
         },
         {
+            "numero": 20,
+            "data": "2026-02-10",
             "cliente": "SHENZHEN SUNTHINKS TECHNOLOGY CO., LTD",
-            "doc": 20,
-            "data": "2026-02-10T00:00:00.000Z",
-            "totale": 10
+            "valore": 10
         },
         {
+            "numero": 18,
+            "data": "2026-02-09",
             "cliente": "MARCELLINI FABIO",
-            "doc": 18,
-            "data": "2026-02-09T00:00:00.000Z",
-            "totale": 329
+            "valore": 255
         },
         {
+            "numero": 19,
+            "data": "2026-02-09",
             "cliente": "UAB SDA PAKUOTE",
-            "doc": 19,
-            "data": "2026-02-09T00:00:00.000Z",
-            "totale": 370
+            "valore": 320
         },
         {
+            "numero": 15,
+            "data": "2026-02-05",
             "cliente": "GREEN PAPER SRL",
-            "doc": 15,
-            "data": "2026-02-05T00:00:00.000Z",
-            "totale": 458
+            "valore": 360
         },
         {
+            "numero": 16,
+            "data": "2026-02-05",
             "cliente": "MERCO' SRL",
-            "doc": 16,
-            "data": "2026-02-05T00:00:00.000Z",
-            "totale": 336
+            "valore": 260
         },
         {
+            "numero": 17,
+            "data": "2026-02-05",
             "cliente": "PAPERBIT DI SCATTARETICA MARIA",
-            "doc": 17,
-            "data": "2026-02-05T00:00:00.000Z",
-            "totale": 92
+            "valore": 60
         },
         {
+            "numero": 14,
+            "data": "2026-01-30",
             "cliente": "ADORNI DISTRIBUZIONI GRAFICHE SRL",
-            "doc": 14,
-            "data": "2026-01-30T00:00:00.000Z",
-            "totale": 162
+            "valore": 133
         },
         {
+            "numero": 12,
+            "data": "2026-01-26",
             "cliente": "ALEGATES SRL",
-            "doc": 12,
-            "data": "2026-01-26T00:00:00.000Z",
-            "totale": 85
+            "valore": 60
         },
         {
+            "numero": 13,
+            "data": "2026-01-26",
             "cliente": "ITALTECNICA S.A.S.",
-            "doc": 13,
-            "data": "2026-01-26T00:00:00.000Z",
-            "totale": 107
+            "valore": 78
         },
         {
+            "numero": 11,
+            "data": "2026-01-23",
             "cliente": "ITALTECNICA S.A.S.",
-            "doc": 11,
-            "data": "2026-01-23T00:00:00.000Z",
-            "totale": 113
+            "valore": 78
         },
         {
+            "numero": 9,
+            "data": "2026-01-21",
             "cliente": "COMGRAF d.o.o.",
-            "doc": 9,
-            "data": "2026-01-21T00:00:00.000Z",
-            "totale": 432
+            "valore": 417
         },
         {
+            "numero": 10,
+            "data": "2026-01-21",
             "cliente": "EAGLES PACKAGING SERVICE SRL",
-            "doc": 10,
-            "data": "2026-01-21T00:00:00.000Z",
-            "totale": 677
+            "valore": 540
         },
         {
+            "numero": 8,
+            "data": "2026-01-16",
             "cliente": "PUBBLIESSE DI SAVATICCHIO SALVATORE",
-            "doc": 8,
-            "data": "2026-01-16T00:00:00.000Z",
-            "totale": 653
+            "valore": 520
         },
         {
+            "numero": 7,
+            "data": "2026-01-15",
             "cliente": "CSP PLUS s.r.o.",
-            "doc": 7,
-            "data": "2026-01-15T00:00:00.000Z",
-            "totale": 1147
+            "valore": 1112
         },
         {
+            "numero": 5,
+            "data": "2026-01-14",
             "cliente": "IMPRONTA SAS",
-            "doc": 5,
-            "data": "2026-01-14T00:00:00.000Z",
-            "totale": 124
+            "valore": 102
         },
         {
+            "numero": 6,
+            "data": "2026-01-14",
             "cliente": "MARTIN PACKAGING LIMITED",
-            "doc": 6,
-            "data": "2026-01-14T00:00:00.000Z",
-            "totale": 57750
+            "valore": 57750
         },
         {
+            "numero": 2,
+            "data": "2026-01-13",
             "cliente": "MARCELLINI FABIO",
-            "doc": 2,
-            "data": "2026-01-13T00:00:00.000Z",
-            "totale": 617
+            "valore": 491
         },
         {
+            "numero": 3,
+            "data": "2026-01-13",
             "cliente": "SC PLASTSISTEM SRL",
-            "doc": 3,
-            "data": "2026-01-13T00:00:00.000Z",
-            "totale": 1227
+            "valore": 1192
         },
         {
+            "numero": 4,
+            "data": "2026-01-13",
             "cliente": "GIFT AND PREMIUM LIMITED",
-            "doc": 4,
-            "data": "2026-01-13T00:00:00.000Z",
-            "totale": 7620
+            "valore": 7620
         },
         {
+            "numero": 1,
+            "data": "2026-01-12",
             "cliente": "MERCO' SRL",
-            "doc": 1,
-            "data": "2026-01-12T00:00:00.000Z",
-            "totale": 494
+            "valore": 390
         }
     ],
     "topClienti": [
@@ -182,6 +188,52 @@
         {
             "nome": "GMG PRESS SRL",
             "totale": 3840
+        }
+    ],
+    "summary": {
+        "count": 24,
+        "totale": 74548
+    },
+    "topClientiMese": [
+        {
+            "nome": "CREDEMLEASING SPA",
+            "totale": 197640
+        },
+        {
+            "nome": "MODULPRINT SNC",
+            "totale": 63538
+        },
+        {
+            "nome": "OMEGA POINT SRL",
+            "totale": 38942
+        },
+        {
+            "nome": "ALBA LEASING SPA",
+            "totale": 24400
+        },
+        {
+            "nome": "LITOERRE SNC",
+            "totale": 12422
+        },
+        {
+            "nome": "AEB SPA",
+            "totale": 12229
+        },
+        {
+            "nome": "TIPOGRAFIA 1000 IDEE",
+            "totale": 10248
+        },
+        {
+            "nome": "EURO ACCESSORI SRL",
+            "totale": 9479
+        },
+        {
+            "nome": "TECNO BOX SRL",
+            "totale": 7113
+        },
+        {
+            "nome": "KEMPER SYSTEM ITALIA SRL",
+            "totale": 6869
         }
     ]
 }

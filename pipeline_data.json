@@ -1,8 +1,14 @@
 {
-    "lastUpdate": "2026-02-20T08:13",
-    "count": 22,
-    "totale": 74766,
+    "lastUpdate": "2026-02-23T07:15",
+    "count": 23,
+    "totale": 75565,
     "proforma": [
+        {
+            "cliente": "CLASER PACK DI CORONO MAURO E C. SNC",
+            "doc": 23,
+            "data": "2026-02-20T00:00:00.000Z",
+            "totale": 799
+        },
         {
             "cliente": "EMMECI PACKAGING SRL",
             "doc": 22,
@@ -162,6 +168,10 @@
             "totale": 5113
         },
         {
+            "nome": "LITOERRE SNC",
+            "totale": 5061
+        },
+        {
             "nome": "TIPOGRAFIA 1000 IDEE",
             "totale": 4200
         },
@@ -172,10 +182,6 @@
         {
             "nome": "GMG PRESS SRL",
             "totale": 3840
-        },
-        {
-            "nome": "LITOERRE SNC",
-            "totale": 2889
         }
     ]
 }

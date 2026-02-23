@@ -1,9 +1,9 @@
 {
-    "lastUpdate": "2026-02-20T08:13",
+    "lastUpdate": "2026-02-23T07:15",
     "anno": 2026,
     "stats": {
-        "fatturato": 370930,
-        "leadAttivi": 158,
+        "fatturato": 378922,
+        "leadAttivi": 172,
         "macchineVendute": 214659,
         "leasingOperazioni": 1,
         "leasingValore": 56000
@@ -77,6 +77,10 @@
     ],
     "attivitaRecenti": [
         {
+            "tempo": "23/02 07:15",
+            "azione": "Dashboard aggiornata da DB"
+        },
+        {
             "tempo": "20/02 08:13",
             "azione": "Dashboard aggiornata da DB"
         },
@@ -90,10 +94,6 @@
         },
         {
             "tempo": "17/02 08:00",
-            "azione": "Dashboard aggiornata da DB"
-        },
-        {
-            "tempo": "16/02 08:00",
             "azione": "Dashboard aggiornata da DB"
         }
     ],
@@ -142,10 +142,10 @@
             "budgetOriginale": 166251.8,
             "storico2025": 257813.72,
             "gruppo10": 109008,
-            "gruppo40": 57229,
-            "gruppo50": 1650,
+            "gruppo40": 65196,
+            "gruppo50": 1676,
             "gruppo60": 5229,
-            "fatturato": 175941,
+            "fatturato": 183934,
             "budget": 163527.02,
             "previsione": 209172.12
         },
@@ -271,5 +271,5 @@
         }
     ],
     "previsioneAnnuale": 3271228,
-    "budgetResiduo": 2229070
+    "budgetResiduo": 2221078
 }

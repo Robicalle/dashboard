@@ -1,5 +1,5 @@
 {
-    "lastUpdate": "2026-02-23T12:56",
+    "lastUpdate": "2026-02-24T06:15",
     "count": 23,
     "totale": 75565,
     "proforma": [
@@ -8,6 +8,12 @@
             "data": "2026-02-23",
             "cliente": "SOPRA BUSINESS LTD",
             "valore": 480
+        },
+        {
+            "numero": 25,
+            "data": "2026-02-23",
+            "cliente": "SARDACHEM SRL",
+            "valore": 388
         },
         {
             "numero": 23,
@@ -191,8 +197,8 @@
         }
     ],
     "summary": {
-        "count": 24,
-        "totale": 74548
+        "count": 25,
+        "totale": 74936
     },
     "topClientiMese": [
         {

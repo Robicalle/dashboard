@@ -1,8 +1,14 @@
 {
-    "lastUpdate": "2026-02-24T06:15",
+    "lastUpdate": "2026-02-25T06:15",
     "count": 23,
     "totale": 75565,
     "proforma": [
+        {
+            "numero": 26,
+            "data": "2026-02-24",
+            "cliente": "MERCO' SRL",
+            "valore": 390
+        },
         {
             "numero": 24,
             "data": "2026-02-23",
@@ -197,8 +203,8 @@
         }
     ],
     "summary": {
-        "count": 25,
-        "totale": 74936
+        "count": 26,
+        "totale": 75326
     },
     "topClientiMese": [
         {
@@ -218,12 +224,12 @@
             "totale": 24400
         },
         {
-            "nome": "LITOERRE SNC",
-            "totale": 12422
-        },
-        {
             "nome": "AEB SPA",
             "totale": 12229
+        },
+        {
+            "nome": "LITOERRE SNC",
+            "totale": 12093
         },
         {
             "nome": "TIPOGRAFIA 1000 IDEE",

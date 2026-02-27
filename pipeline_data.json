@@ -1,8 +1,32 @@
 {
-    "lastUpdate": "2026-02-25T06:15",
+    "lastUpdate": "2026-02-27T06:15",
     "count": 23,
     "totale": 75565,
     "proforma": [
+        {
+            "numero": 30,
+            "data": "2026-02-26",
+            "cliente": "EKO-LETER sh.p.k.",
+            "valore": 1440
+        },
+        {
+            "numero": 27,
+            "data": "2026-02-25",
+            "cliente": "AUSGEWAHLT VERTRIEBS GMBH",
+            "valore": 55050
+        },
+        {
+            "numero": 28,
+            "data": "2026-02-25",
+            "cliente": "PAPERBIT DI SCATTARETICA MARIA",
+            "valore": 70
+        },
+        {
+            "numero": 29,
+            "data": "2026-02-25",
+            "cliente": "COPY NET SNC",
+            "valore": 60
+        },
         {
             "numero": 26,
             "data": "2026-02-24",
@@ -73,7 +97,7 @@
             "numero": 17,
             "data": "2026-02-05",
             "cliente": "PAPERBIT DI SCATTARETICA MARIA",
-            "valore": 60
+            "valore": 130
         },
         {
             "numero": 14,
@@ -203,8 +227,8 @@
         }
     ],
     "summary": {
-        "count": 26,
-        "totale": 75326
+        "count": 30,
+        "totale": 132016
     },
     "topClientiMese": [
         {
@@ -233,7 +257,11 @@
         },
         {
             "nome": "TIPOGRAFIA 1000 IDEE",
-            "totale": 10248
+            "totale": 11846
+        },
+        {
+            "nome": "LOGISTICA FOOD SRL",
+            "totale": 10068
         },
         {
             "nome": "EURO ACCESSORI SRL",
@@ -242,10 +270,6 @@
         {
             "nome": "TECNO BOX SRL",
             "totale": 7113
-        },
-        {
-            "nome": "KEMPER SYSTEM ITALIA SRL",
-            "totale": 6869
         }
     ]
 }

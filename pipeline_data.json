@@ -1,8 +1,14 @@
 {
-    "lastUpdate": "2026-02-27T06:15",
+    "lastUpdate": "2026-02-28T06:15",
     "count": 23,
     "totale": 75565,
     "proforma": [
+        {
+            "numero": 31,
+            "data": "2026-02-27",
+            "cliente": "PARTY & DOLCYAMO SRLS",
+            "valore": 600
+        },
         {
             "numero": 30,
             "data": "2026-02-26",
@@ -227,8 +233,8 @@
         }
     ],
     "summary": {
-        "count": 30,
-        "totale": 132016
+        "count": 31,
+        "totale": 132616
     },
     "topClientiMese": [
         {

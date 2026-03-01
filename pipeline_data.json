@@ -1,5 +1,5 @@
 {
-    "lastUpdate": "2026-02-28T06:15",
+    "lastUpdate": "2026-03-01T06:15",
     "count": 23,
     "totale": 75565,
     "proforma": [
@@ -236,46 +236,5 @@
         "count": 31,
         "totale": 132616
     },
-    "topClientiMese": [
-        {
-            "nome": "CREDEMLEASING SPA",
-            "totale": 197640
-        },
-        {
-            "nome": "MODULPRINT SNC",
-            "totale": 63538
-        },
-        {
-            "nome": "OMEGA POINT SRL",
-            "totale": 38942
-        },
-        {
-            "nome": "ALBA LEASING SPA",
-            "totale": 24400
-        },
-        {
-            "nome": "AEB SPA",
-            "totale": 12229
-        },
-        {
-            "nome": "LITOERRE SNC",
-            "totale": 12093
-        },
-        {
-            "nome": "TIPOGRAFIA 1000 IDEE",
-            "totale": 11846
-        },
-        {
-            "nome": "LOGISTICA FOOD SRL",
-            "totale": 10068
-        },
-        {
-            "nome": "EURO ACCESSORI SRL",
-            "totale": 9479
-        },
-        {
-            "nome": "TECNO BOX SRL",
-            "totale": 7113
-        }
-    ]
+    "topClientiMese": []
 }

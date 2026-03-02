@@ -1,5 +1,5 @@
 {
-    "lastUpdate": "2026-03-01T06:15",
+    "lastUpdate": "2026-03-02T06:15",
     "anno": 2026,
     "stats": {
         "fatturato": 392751,
@@ -77,6 +77,10 @@
     ],
     "attivitaRecenti": [
         {
+            "tempo": "02/03 07:15",
+            "azione": "Dashboard aggiornata da DB"
+        },
+        {
             "tempo": "01/03 07:15",
             "azione": "Dashboard aggiornata da DB"
         },
@@ -90,10 +94,6 @@
         },
         {
             "tempo": "26/02 14:01",
-            "azione": "Dashboard aggiornata da DB"
-        },
-        {
-            "tempo": "25/02 07:15",
             "azione": "Dashboard aggiornata da DB"
         }
     ],

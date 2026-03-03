@@ -1,5 +1,5 @@
 {
-    "lastUpdate": "2026-03-02T06:15",
+    "lastUpdate": "2026-03-03T06:30",
     "count": 23,
     "totale": 75565,
     "proforma": [
@@ -236,5 +236,46 @@
         "count": 31,
         "totale": 132616
     },
-    "topClientiMese": []
+    "topClientiMese": [
+        {
+            "nome": "GMG PRESS SRL",
+            "totale": 11309
+        },
+        {
+            "nome": "LEG. ED. G. OLIVOTTO L.E.G.O. SPA",
+            "totale": 8666
+        },
+        {
+            "nome": "MAZZONI SERVIZI SRL",
+            "totale": 5345
+        },
+        {
+            "nome": "VITE COLTE SPA",
+            "totale": 2779
+        },
+        {
+            "nome": "DECORESIN SRL",
+            "totale": 2379
+        },
+        {
+            "nome": "P & D IMBALLAGGI S.R.L.",
+            "totale": 2379
+        },
+        {
+            "nome": "GREEN HAS ITALIA SPA",
+            "totale": 1610
+        },
+        {
+            "nome": "SCATOLIFICIO PE.ZZA.NO DI PREZIOSO NUNZIA",
+            "totale": 1598
+        },
+        {
+            "nome": "DISTRIP SRL",
+            "totale": 1574
+        },
+        {
+            "nome": "COPIFLOR S.A.S.",
+            "totale": 1327
+        }
+    ]
 }

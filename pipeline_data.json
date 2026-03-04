@@ -1,5 +1,5 @@
 {
-    "lastUpdate": "2026-03-03T06:30",
+    "lastUpdate": "2026-03-04T06:30",
     "count": 23,
     "totale": 75565,
     "proforma": [
@@ -254,6 +254,10 @@
             "totale": 2779
         },
         {
+            "nome": "IMBALFOX SRL",
+            "totale": 2428
+        },
+        {
             "nome": "DECORESIN SRL",
             "totale": 2379
         },
@@ -262,20 +266,16 @@
             "totale": 2379
         },
         {
+            "nome": "PIZZA BOX SRL",
+            "totale": 1960
+        },
+        {
+            "nome": "MAKHYMO SRL",
+            "totale": 1881
+        },
+        {
             "nome": "GREEN HAS ITALIA SPA",
             "totale": 1610
-        },
-        {
-            "nome": "SCATOLIFICIO PE.ZZA.NO DI PREZIOSO NUNZIA",
-            "totale": 1598
-        },
-        {
-            "nome": "DISTRIP SRL",
-            "totale": 1574
-        },
-        {
-            "nome": "COPIFLOR S.A.S.",
-            "totale": 1327
         }
     ]
 }

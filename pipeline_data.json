@@ -1,8 +1,14 @@
 {
-    "lastUpdate": "2026-03-04T06:30",
+    "lastUpdate": "2026-03-05T06:30",
     "count": 23,
     "totale": 75565,
     "proforma": [
+        {
+            "numero": 32,
+            "data": "2026-03-04",
+            "cliente": "OMEGA POINT SRL",
+            "valore": 640
+        },
         {
             "numero": 31,
             "data": "2026-02-27",
@@ -233,17 +239,17 @@
         }
     ],
     "summary": {
-        "count": 31,
-        "totale": 132616
+        "count": 32,
+        "totale": 133256
     },
     "topClientiMese": [
         {
-            "nome": "GMG PRESS SRL",
-            "totale": 11309
+            "nome": "LEG. ED. G. OLIVOTTO L.E.G.O. SPA",
+            "totale": 25856
         },
         {
-            "nome": "LEG. ED. G. OLIVOTTO L.E.G.O. SPA",
-            "totale": 8666
+            "nome": "GMG PRESS SRL",
+            "totale": 11309
         },
         {
             "nome": "MAZZONI SERVIZI SRL",

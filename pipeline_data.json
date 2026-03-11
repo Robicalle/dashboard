@@ -1,5 +1,5 @@
 {
-    "lastUpdate": "2026-03-10T06:30",
+    "lastUpdate": "2026-03-11T06:30",
     "count": 23,
     "totale": 75565,
     "proforma": [
@@ -252,8 +252,20 @@
             "totale": 21760
         },
         {
+            "nome": "TECNO BOX SRL",
+            "totale": 7198
+        },
+        {
             "nome": "MAZZONI SERVIZI SRL",
             "totale": 5345
+        },
+        {
+            "nome": "DE.WA SRL",
+            "totale": 3443
+        },
+        {
+            "nome": "EUROPACK SOCIETA' COOPERATIVA",
+            "totale": 3160
         },
         {
             "nome": "VITE COLTE SPA",
@@ -270,18 +282,6 @@
         {
             "nome": "P & D IMBALLAGGI S.R.L.",
             "totale": 2379
-        },
-        {
-            "nome": "PIZZA BOX SRL",
-            "totale": 1960
-        },
-        {
-            "nome": "MAKHYMO SRL",
-            "totale": 1881
-        },
-        {
-            "nome": "B.E.P. ITALIA IMPORT-EXPORT SRL",
-            "totale": 1830
         }
     ]
 }

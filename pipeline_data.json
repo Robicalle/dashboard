@@ -1,5 +1,5 @@
 {
-    "lastUpdate": "2026-03-11T06:30",
+    "lastUpdate": "2026-03-12T06:30",
     "count": 23,
     "totale": 75565,
     "proforma": [
@@ -245,7 +245,7 @@
     "topClientiMese": [
         {
             "nome": "LEG. ED. G. OLIVOTTO L.E.G.O. SPA",
-            "totale": 25856
+            "totale": 25316
         },
         {
             "nome": "GMG PRESS SRL",
@@ -264,6 +264,14 @@
             "totale": 3443
         },
         {
+            "nome": "TDR WORK",
+            "totale": 3257
+        },
+        {
+            "nome": "PROCHIM SRL",
+            "totale": 3199
+        },
+        {
             "nome": "EUROPACK SOCIETA' COOPERATIVA",
             "totale": 3160
         },
@@ -274,14 +282,6 @@
         {
             "nome": "IMBALFOX SRL",
             "totale": 2428
-        },
-        {
-            "nome": "DECORESIN SRL",
-            "totale": 2379
-        },
-        {
-            "nome": "P & D IMBALLAGGI S.R.L.",
-            "totale": 2379
         }
     ]
 }

@@ -1,5 +1,5 @@
 {
-    "lastUpdate": "2026-03-12T06:30",
+    "lastUpdate": "2026-03-13T06:30",
     "count": 23,
     "totale": 75565,
     "proforma": [
@@ -264,10 +264,6 @@
             "totale": 3443
         },
         {
-            "nome": "TDR WORK",
-            "totale": 3257
-        },
-        {
             "nome": "PROCHIM SRL",
             "totale": 3199
         },
@@ -276,12 +272,16 @@
             "totale": 3160
         },
         {
+            "nome": "TDR WORK",
+            "totale": 2989
+        },
+        {
             "nome": "VITE COLTE SPA",
             "totale": 2779
         },
         {
-            "nome": "IMBALFOX SRL",
-            "totale": 2428
+            "nome": "FARMACIA DOTT. METALLA SRL",
+            "totale": 2721
         }
     ]
 }

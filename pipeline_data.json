@@ -1,8 +1,20 @@
 {
-    "lastUpdate": "2026-03-13T06:30",
+    "lastUpdate": "2026-03-14T06:30",
     "count": 23,
     "totale": 75565,
     "proforma": [
+        {
+            "numero": 33,
+            "data": "2026-03-13",
+            "cliente": "EAGLES PACKAGING SERVICE SRL",
+            "valore": 420
+        },
+        {
+            "numero": 34,
+            "data": "2026-03-13",
+            "cliente": "FULL BOX, SIA",
+            "valore": 800
+        },
         {
             "numero": 32,
             "data": "2026-03-04",
@@ -239,8 +251,8 @@
         }
     ],
     "summary": {
-        "count": 32,
-        "totale": 133256
+        "count": 34,
+        "totale": 134476
     },
     "topClientiMese": [
         {
@@ -276,12 +288,12 @@
             "totale": 2989
         },
         {
-            "nome": "VITE COLTE SPA",
-            "totale": 2779
+            "nome": "WE MAKE SRL",
+            "totale": 2806
         },
         {
-            "nome": "FARMACIA DOTT. METALLA SRL",
-            "totale": 2721
+            "nome": "VITE COLTE SPA",
+            "totale": 2779
         }
     ]
 }

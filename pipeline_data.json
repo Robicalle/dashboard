@@ -1,8 +1,14 @@
 {
-    "lastUpdate": "2026-03-16T06:30",
+    "lastUpdate": "2026-03-17T06:30",
     "count": 23,
     "totale": 75565,
     "proforma": [
+        {
+            "numero": 35,
+            "data": "2026-03-16",
+            "cliente": "MERCO' SRL",
+            "valore": 390
+        },
         {
             "numero": 33,
             "data": "2026-03-13",
@@ -251,8 +257,8 @@
         }
     ],
     "summary": {
-        "count": 34,
-        "totale": 134476
+        "count": 35,
+        "totale": 134866
     },
     "topClientiMese": [
         {
@@ -270,6 +276,10 @@
         {
             "nome": "MAZZONI SERVIZI SRL",
             "totale": 5345
+        },
+        {
+            "nome": "GRAPHIKE' SRL",
+            "totale": 4516
         },
         {
             "nome": "DE.WA SRL",
@@ -290,10 +300,6 @@
         {
             "nome": "WE MAKE SRL",
             "totale": 2806
-        },
-        {
-            "nome": "VITE COLTE SPA",
-            "totale": 2779
         }
     ]
 }

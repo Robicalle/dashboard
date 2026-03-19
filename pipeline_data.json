@@ -1,8 +1,14 @@
 {
-    "lastUpdate": "2026-03-17T06:30",
+    "lastUpdate": "2026-03-19T06:30",
     "count": 23,
     "totale": 75565,
     "proforma": [
+        {
+            "numero": 36,
+            "data": "2026-03-18",
+            "cliente": "DA.CA SERVICE SAS",
+            "valore": 720
+        },
         {
             "numero": 35,
             "data": "2026-03-16",
@@ -257,8 +263,8 @@
         }
     ],
     "summary": {
-        "count": 35,
-        "totale": 134866
+        "count": 36,
+        "totale": 135586
     },
     "topClientiMese": [
         {
@@ -270,12 +276,20 @@
             "totale": 21760
         },
         {
+            "nome": "GRAFIK-ART SRL",
+            "totale": 7564
+        },
+        {
             "nome": "TECNO BOX SRL",
             "totale": 7198
         },
         {
             "nome": "MAZZONI SERVIZI SRL",
             "totale": 5345
+        },
+        {
+            "nome": "PRESENT-MORE SRL",
+            "totale": 5029
         },
         {
             "nome": "GRAPHIKE' SRL",
@@ -292,14 +306,6 @@
         {
             "nome": "EUROPACK SOCIETA' COOPERATIVA",
             "totale": 3160
-        },
-        {
-            "nome": "TDR WORK",
-            "totale": 2989
-        },
-        {
-            "nome": "WE MAKE SRL",
-            "totale": 2806
         }
     ]
 }

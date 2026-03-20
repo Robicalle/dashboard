@@ -1,5 +1,5 @@
 {
-    "lastUpdate": "2026-03-19T06:30",
+    "lastUpdate": "2026-03-20T06:30",
     "count": 23,
     "totale": 75565,
     "proforma": [
@@ -268,12 +268,12 @@
     },
     "topClientiMese": [
         {
-            "nome": "LEG. ED. G. OLIVOTTO L.E.G.O. SPA",
-            "totale": 25316
+            "nome": "GMG PRESS SRL",
+            "totale": 26628
         },
         {
-            "nome": "GMG PRESS SRL",
-            "totale": 21760
+            "nome": "LEG. ED. G. OLIVOTTO L.E.G.O. SPA",
+            "totale": 25316
         },
         {
             "nome": "GRAFIK-ART SRL",
@@ -282,6 +282,10 @@
         {
             "nome": "TECNO BOX SRL",
             "totale": 7198
+        },
+        {
+            "nome": "FARMACIA DOTT. METALLA SRL",
+            "totale": 5441
         },
         {
             "nome": "MAZZONI SERVIZI SRL",
@@ -302,10 +306,6 @@
         {
             "nome": "PROCHIM SRL",
             "totale": 3199
-        },
-        {
-            "nome": "EUROPACK SOCIETA' COOPERATIVA",
-            "totale": 3160
         }
     ]
 }

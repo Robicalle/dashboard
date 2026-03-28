@@ -1,5 +1,5 @@
 {
-    "lastUpdate": "2026-03-27T06:30",
+    "lastUpdate": "2026-03-28T06:30",
     "count": 23,
     "totale": 75565,
     "proforma": [
@@ -280,12 +280,16 @@
     },
     "topClientiMese": [
         {
-            "nome": "GMG PRESS SRL",
-            "totale": 26628
+            "nome": "BANCA IFIS SPA",
+            "totale": 241560
         },
         {
             "nome": "LEG. ED. G. OLIVOTTO L.E.G.O. SPA",
-            "totale": 25316
+            "totale": 33879
+        },
+        {
+            "nome": "GMG PRESS SRL",
+            "totale": 26628
         },
         {
             "nome": "PUBBLIESSE DI SAVATICCHIO SALVATORE",
@@ -296,28 +300,24 @@
             "totale": 9089
         },
         {
+            "nome": "TECNO BOX SRL",
+            "totale": 9028
+        },
+        {
             "nome": "GRAFIK-ART SRL",
             "totale": 7788
         },
         {
-            "nome": "TECNO BOX SRL",
-            "totale": 7198
+            "nome": "MODULPRINT SNC",
+            "totale": 6256
+        },
+        {
+            "nome": "AGP SRL",
+            "totale": 5734
         },
         {
             "nome": "FARMACIA DOTT. METALLA SRL",
             "totale": 5441
-        },
-        {
-            "nome": "MAZZONI SERVIZI SRL",
-            "totale": 5345
-        },
-        {
-            "nome": "PRESENT-MORE SRL",
-            "totale": 5029
-        },
-        {
-            "nome": "MODULPRINT SNC",
-            "totale": 4756
         }
     ]
 }

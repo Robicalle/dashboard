@@ -1,8 +1,20 @@
 {
-    "lastUpdate": "2026-03-30T05:30",
+    "lastUpdate": "2026-03-31T05:30",
     "count": 23,
     "totale": 75565,
     "proforma": [
+        {
+            "numero": 39,
+            "data": "2026-03-30",
+            "cliente": "T.S.E. TERMO STAMPA ETICHETTE SAS",
+            "valore": 238
+        },
+        {
+            "numero": 40,
+            "data": "2026-03-30",
+            "cliente": "GINS DI SAVIO GIULIO",
+            "valore": 38525
+        },
         {
             "numero": 37,
             "data": "2026-03-24",
@@ -275,13 +287,17 @@
         }
     ],
     "summary": {
-        "count": 38,
-        "totale": 151246
+        "count": 40,
+        "totale": 190009
     },
     "topClientiMese": [
         {
             "nome": "BANCA IFIS SPA",
             "totale": 241560
+        },
+        {
+            "nome": "LINEAGRAFICA SNC",
+            "totale": 126782
         },
         {
             "nome": "LEG. ED. G. OLIVOTTO L.E.G.O. SPA",
@@ -314,10 +330,6 @@
         {
             "nome": "AGP SRL",
             "totale": 5734
-        },
-        {
-            "nome": "FARMACIA DOTT. METALLA SRL",
-            "totale": 5441
         }
     ]
 }

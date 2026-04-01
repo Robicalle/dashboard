@@ -1,5 +1,5 @@
 {
-    "lastUpdate": "2026-03-31T05:30",
+    "lastUpdate": "2026-04-01T05:30",
     "count": 23,
     "totale": 75565,
     "proforma": [
@@ -290,46 +290,5 @@
         "count": 40,
         "totale": 190009
     },
-    "topClientiMese": [
-        {
-            "nome": "BANCA IFIS SPA",
-            "totale": 241560
-        },
-        {
-            "nome": "LINEAGRAFICA SNC",
-            "totale": 126782
-        },
-        {
-            "nome": "LEG. ED. G. OLIVOTTO L.E.G.O. SPA",
-            "totale": 33879
-        },
-        {
-            "nome": "GMG PRESS SRL",
-            "totale": 26628
-        },
-        {
-            "nome": "PUBBLIESSE DI SAVATICCHIO SALVATORE",
-            "totale": 10541
-        },
-        {
-            "nome": "EURO ACCESSORI SRL",
-            "totale": 9089
-        },
-        {
-            "nome": "TECNO BOX SRL",
-            "totale": 9028
-        },
-        {
-            "nome": "GRAFIK-ART SRL",
-            "totale": 7788
-        },
-        {
-            "nome": "MODULPRINT SNC",
-            "totale": 6256
-        },
-        {
-            "nome": "AGP SRL",
-            "totale": 5734
-        }
-    ]
+    "topClientiMese": []
 }

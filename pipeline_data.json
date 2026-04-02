@@ -1,5 +1,5 @@
 {
-    "lastUpdate": "2026-04-01T05:30",
+    "lastUpdate": "2026-04-02T05:33",
     "count": 23,
     "totale": 75565,
     "proforma": [
@@ -290,5 +290,30 @@
         "count": 40,
         "totale": 190009
     },
-    "topClientiMese": []
+    "topClientiMese": [
+        {
+            "nome": "PRINT-SHIRT DI COPPOLA RAFFAELE",
+            "totale": 25620
+        },
+        {
+            "nome": "TIPOLITOGRAFIA GRAFICA CIRILLO SAS",
+            "totale": 3550
+        },
+        {
+            "nome": "ADECO SRL",
+            "totale": 1562
+        },
+        {
+            "nome": "MC DIGITAL SRL",
+            "totale": 905
+        },
+        {
+            "nome": "GRASSO SRLS",
+            "totale": 429
+        },
+        {
+            "nome": "MOLTENI CAMPIONARI SRL",
+            "totale": 415
+        }
+    ]
 }

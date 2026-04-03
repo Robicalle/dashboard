@@ -1,5 +1,5 @@
 {
-    "lastUpdate": "2026-04-02T05:33",
+    "lastUpdate": "2026-04-03T05:33",
     "count": 23,
     "totale": 75565,
     "proforma": [
@@ -300,8 +300,16 @@
             "totale": 3550
         },
         {
+            "nome": "COPIFLOR S.A.S.",
+            "totale": 1718
+        },
+        {
             "nome": "ADECO SRL",
             "totale": 1562
+        },
+        {
+            "nome": "SAITTA PUBBLICITA' E COMUNICAZIONE SRL",
+            "totale": 1208
         },
         {
             "nome": "MC DIGITAL SRL",
@@ -314,6 +322,14 @@
         {
             "nome": "MOLTENI CAMPIONARI SRL",
             "totale": 415
+        },
+        {
+            "nome": "PRESENT-MORE SRL",
+            "totale": 405
+        },
+        {
+            "nome": "ARTCOPY P&G SNC",
+            "totale": 110
         }
     ]
 }

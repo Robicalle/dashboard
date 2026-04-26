@@ -1,8 +1,74 @@
 {
-    "lastUpdate": "2026-04-07T05:34",
+    "lastUpdate": "2026-04-26T05:31",
     "count": 23,
     "totale": 75565,
     "proforma": [
+        {
+            "numero": 51,
+            "data": "2026-04-22",
+            "cliente": "INNOVAPACK SRL",
+            "valore": 1950
+        },
+        {
+            "numero": 48,
+            "data": "2026-04-20",
+            "cliente": "SOPRA BUSINESS LTD",
+            "valore": 320
+        },
+        {
+            "numero": 49,
+            "data": "2026-04-20",
+            "cliente": "EAGLES PACKAGING SERVICE SRL",
+            "valore": 640
+        },
+        {
+            "numero": 50,
+            "data": "2026-04-20",
+            "cliente": "TANCIA LTD",
+            "valore": 5130
+        },
+        {
+            "numero": 47,
+            "data": "2026-04-14",
+            "cliente": "SC PLASTSISTEM SRL",
+            "valore": 640
+        },
+        {
+            "numero": 46,
+            "data": "2026-04-13",
+            "cliente": "MERCO' SRL",
+            "valore": 780
+        },
+        {
+            "numero": 45,
+            "data": "2026-04-10",
+            "cliente": "CLASER PACK DI CORONO MAURO E C. SNC",
+            "valore": 320
+        },
+        {
+            "numero": 43,
+            "data": "2026-04-09",
+            "cliente": "CAFFE' TRINCA SRL",
+            "valore": 1300
+        },
+        {
+            "numero": 44,
+            "data": "2026-04-09",
+            "cliente": "TANCIA LTD",
+            "valore": 4130
+        },
+        {
+            "numero": 42,
+            "data": "2026-04-08",
+            "cliente": "AUSGEWAHLT VERTRIEBS GMBH",
+            "valore": 4340
+        },
+        {
+            "numero": 41,
+            "data": "2026-04-07",
+            "cliente": "TDR WORK",
+            "valore": 2368
+        },
         {
             "numero": 39,
             "data": "2026-03-30",
@@ -287,49 +353,49 @@
         }
     ],
     "summary": {
-        "count": 40,
-        "totale": 190009
+        "count": 51,
+        "totale": 211927
     },
     "topClientiMese": [
         {
+            "nome": "LEG. ED. G. OLIVOTTO L.E.G.O. SPA",
+            "totale": 63792
+        },
+        {
+            "nome": "ALBA LEASING SPA",
+            "totale": 36600
+        },
+        {
+            "nome": "GRAPHIKE' SRL",
+            "totale": 26614
+        },
+        {
             "nome": "PRINT-SHIRT DI COPPOLA RAFFAELE",
-            "totale": 25620
+            "totale": 25840
         },
         {
-            "nome": "TIPOLITOGRAFIA GRAFICA CIRILLO SAS",
-            "totale": 3550
+            "nome": "GMG PRESS SRL",
+            "totale": 20686
         },
         {
-            "nome": "COPIFLOR S.A.S.",
-            "totale": 1718
+            "nome": "RIED SRL",
+            "totale": 13209
         },
         {
-            "nome": "ADECO SRL",
-            "totale": 1562
+            "nome": "EURO ACCESSORI SRL",
+            "totale": 8938
         },
         {
-            "nome": "SAITTA PUBBLICITA' E COMUNICAZIONE SRL",
-            "totale": 1208
+            "nome": "PROCHIM SRL",
+            "totale": 7161
         },
         {
-            "nome": "MC DIGITAL SRL",
-            "totale": 905
+            "nome": "LITOERRE SNC",
+            "totale": 5978
         },
         {
-            "nome": "GRASSO SRLS",
-            "totale": 429
-        },
-        {
-            "nome": "MOLTENI CAMPIONARI SRL",
-            "totale": 415
-        },
-        {
-            "nome": "PRESENT-MORE SRL",
-            "totale": 405
-        },
-        {
-            "nome": "GOOD BUY DI ALFREDO TONELLI",
-            "totale": 222
+            "nome": "COPYWORLD SPA",
+            "totale": 4370
         }
     ]
 }

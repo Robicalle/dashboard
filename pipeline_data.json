@@ -1,8 +1,14 @@
 {
-    "lastUpdate": "2026-04-26T05:31",
+    "lastUpdate": "2026-04-28T05:31",
     "count": 23,
     "totale": 75565,
     "proforma": [
+        {
+            "numero": 52,
+            "data": "2026-04-27",
+            "cliente": "PUNTOWEB SRL",
+            "valore": 1600
+        },
         {
             "numero": 51,
             "data": "2026-04-22",
@@ -353,8 +359,8 @@
         }
     ],
     "summary": {
-        "count": 51,
-        "totale": 211927
+        "count": 52,
+        "totale": 213527
     },
     "topClientiMese": [
         {
@@ -378,6 +384,10 @@
             "totale": 20686
         },
         {
+            "nome": "GOLD STAR SRL",
+            "totale": 15024
+        },
+        {
             "nome": "RIED SRL",
             "totale": 13209
         },
@@ -392,10 +402,6 @@
         {
             "nome": "LITOERRE SNC",
             "totale": 5978
-        },
-        {
-            "nome": "COPYWORLD SPA",
-            "totale": 4370
         }
     ]
 }

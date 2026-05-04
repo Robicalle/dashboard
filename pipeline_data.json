@@ -1,8 +1,14 @@
 {
-    "lastUpdate": "2026-04-28T05:31",
+    "lastUpdate": "2026-05-04T07:46",
     "count": 23,
     "totale": 75565,
     "proforma": [
+        {
+            "numero": 53,
+            "data": "2026-04-29",
+            "cliente": "UAB SDA PAKUOTE",
+            "valore": 320
+        },
         {
             "numero": 52,
             "data": "2026-04-27",
@@ -359,49 +365,8 @@
         }
     ],
     "summary": {
-        "count": 52,
-        "totale": 213527
+        "count": 53,
+        "totale": 213847
     },
-    "topClientiMese": [
-        {
-            "nome": "LEG. ED. G. OLIVOTTO L.E.G.O. SPA",
-            "totale": 63792
-        },
-        {
-            "nome": "ALBA LEASING SPA",
-            "totale": 36600
-        },
-        {
-            "nome": "GRAPHIKE' SRL",
-            "totale": 26614
-        },
-        {
-            "nome": "PRINT-SHIRT DI COPPOLA RAFFAELE",
-            "totale": 25840
-        },
-        {
-            "nome": "GMG PRESS SRL",
-            "totale": 20686
-        },
-        {
-            "nome": "GOLD STAR SRL",
-            "totale": 15024
-        },
-        {
-            "nome": "RIED SRL",
-            "totale": 13209
-        },
-        {
-            "nome": "EURO ACCESSORI SRL",
-            "totale": 8938
-        },
-        {
-            "nome": "PROCHIM SRL",
-            "totale": 7161
-        },
-        {
-            "nome": "LITOERRE SNC",
-            "totale": 5978
-        }
-    ]
+    "topClientiMese": []
 }

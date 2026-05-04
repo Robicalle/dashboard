@@ -1,8 +1,8 @@
 {
-    "lastUpdate": "2026-04-28T05:31",
+    "lastUpdate": "2026-05-04T07:46",
     "anno": 2026,
     "stats": {
-        "fatturato": 881726,
+        "fatturato": 898586,
         "leadAttivi": 144,
         "macchineVendute": 445596,
         "leasingOperazioni": 1,
@@ -77,23 +77,23 @@
     ],
     "attivitaRecenti": [
         {
-            "tempo": "28/04 07:31",
+            "tempo": "04/05 09:46",
             "azione": "Dashboard aggiornata da DB"
         },
         {
-            "tempo": "27/04 19:00",
+            "tempo": "03/05 19:00",
             "azione": "Dashboard aggiornata da DB"
         },
         {
-            "tempo": "26/04 19:00",
+            "tempo": "02/05 19:00",
             "azione": "Dashboard aggiornata da DB"
         },
         {
-            "tempo": "26/04 07:31",
+            "tempo": "01/05 19:00",
             "azione": "Dashboard aggiornata da DB"
         },
         {
-            "tempo": "25/04 19:00",
+            "tempo": "30/04 19:00",
             "azione": "Dashboard aggiornata da DB"
         }
     ],
@@ -166,12 +166,12 @@
             "budgetOriginale": 244514.4,
             "storico2025": 94459.22,
             "gruppo10": 85808,
-            "gruppo40": 111653,
-            "gruppo50": 12995,
+            "gruppo40": 124297,
+            "gruppo50": 17008,
             "gruppo60": 120,
-            "fatturato": 212436,
+            "fatturato": 229295,
             "budget": 240506.93,
-            "previsione": 503404
+            "previsione": 227233
         },
         {
             "mese": "Maggio",
@@ -183,7 +183,7 @@
             "gruppo60": 0,
             "fatturato": 0,
             "budget": 220809.93,
-            "previsione": 298718
+            "previsione": 24727
         },
         {
             "mese": "Giugno",
@@ -195,7 +195,7 @@
             "gruppo60": 0,
             "fatturato": 0,
             "budget": 172344.89,
-            "previsione": 233153
+            "previsione": 199432
         },
         {
             "mese": "Luglio",
@@ -207,7 +207,7 @@
             "gruppo60": 0,
             "fatturato": 0,
             "budget": 351929.74,
-            "previsione": 476100
+            "previsione": 407241
         },
         {
             "mese": "Agosto",
@@ -219,7 +219,7 @@
             "gruppo60": 0,
             "fatturato": 0,
             "budget": 49523.8,
-            "previsione": 66997
+            "previsione": 57307
         },
         {
             "mese": "Settembre",
@@ -231,7 +231,7 @@
             "gruppo60": 0,
             "fatturato": 0,
             "budget": 217620.87,
-            "previsione": 294403
+            "previsione": 251823
         },
         {
             "mese": "Ottobre",
@@ -243,7 +243,7 @@
             "gruppo60": 0,
             "fatturato": 0,
             "budget": 310686.75,
-            "previsione": 420305
+            "previsione": 359516
         },
         {
             "mese": "Novembre",
@@ -255,7 +255,7 @@
             "gruppo60": 0,
             "fatturato": 0,
             "budget": 246148.53,
-            "previsione": 332996
+            "previsione": 284835
         },
         {
             "mese": "Dicembre",
@@ -267,9 +267,9 @@
             "gruppo60": 0,
             "fatturato": 0,
             "budget": 243491.4,
-            "previsione": 329402
+            "previsione": 281760
         }
     ],
-    "previsioneAnnuale": 3620896,
-    "budgetResiduo": 1724006
+    "previsioneAnnuale": 2759292,
+    "budgetResiduo": 1707349
 }

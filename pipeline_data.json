@@ -1,8 +1,92 @@
 {
-    "lastUpdate": "2026-05-04T07:46",
+    "lastUpdate": "2026-05-28T05:31",
     "count": 23,
     "totale": 75565,
     "proforma": [
+        {
+            "numero": 66,
+            "data": "2026-05-27",
+            "cliente": "MERCO' SRL",
+            "valore": 1040
+        },
+        {
+            "numero": 67,
+            "data": "2026-05-27",
+            "cliente": "AZ. AGR. VINI MASO AI DOSSI",
+            "valore": 630
+        },
+        {
+            "numero": 63,
+            "data": "2026-05-26",
+            "cliente": "GAMMA PRINT SOLUTIONS SRL",
+            "valore": 1600
+        },
+        {
+            "numero": 64,
+            "data": "2026-05-26",
+            "cliente": "SHENZHEN SUNTHINKS TECHNOLOGY CO., LTD",
+            "valore": 100
+        },
+        {
+            "numero": 65,
+            "data": "2026-05-26",
+            "cliente": "GIELLE SRL",
+            "valore": 5400
+        },
+        {
+            "numero": 62,
+            "data": "2026-05-21",
+            "cliente": "GRAFICA MELLUSI",
+            "valore": 200
+        },
+        {
+            "numero": 61,
+            "data": "2026-05-19",
+            "cliente": "PUNTOWEB SRL",
+            "valore": 2080
+        },
+        {
+            "numero": 60,
+            "data": "2026-05-14",
+            "cliente": "MERCO' SRL",
+            "valore": 390
+        },
+        {
+            "numero": 59,
+            "data": "2026-05-12",
+            "cliente": "PAULO RODRIGUES OLIVEIRA",
+            "valore": 160
+        },
+        {
+            "numero": 57,
+            "data": "2026-05-08",
+            "cliente": "ADORNI DISTRIBUZIONI GRAFICHE SRL",
+            "valore": 133
+        },
+        {
+            "numero": 58,
+            "data": "2026-05-08",
+            "cliente": "PUNTOWEB SRL",
+            "valore": 2080
+        },
+        {
+            "numero": 56,
+            "data": "2026-05-06",
+            "cliente": "MERCO' SRL",
+            "valore": 390
+        },
+        {
+            "numero": 55,
+            "data": "2026-05-05",
+            "cliente": "PUNTOWEB SRL",
+            "valore": 2560
+        },
+        {
+            "numero": 54,
+            "data": "2026-05-04",
+            "cliente": "UAB SDA PAKUOTE",
+            "valore": 160
+        },
         {
             "numero": 53,
             "data": "2026-04-29",
@@ -365,8 +449,49 @@
         }
     ],
     "summary": {
-        "count": 53,
-        "totale": 213847
+        "count": 67,
+        "totale": 230770
     },
-    "topClientiMese": []
+    "topClientiMese": [
+        {
+            "nome": "ALBA LEASING SPA",
+            "totale": 142740
+        },
+        {
+            "nome": "SIMPLI CASH SRL",
+            "totale": 71040
+        },
+        {
+            "nome": "LEG. ED. G. OLIVOTTO L.E.G.O. SPA",
+            "totale": 33518
+        },
+        {
+            "nome": "DIPA PERSONAL PACK SRL",
+            "totale": 23072
+        },
+        {
+            "nome": "PUNTOWEB SRL",
+            "totale": 18812
+        },
+        {
+            "nome": "GIELLE SRL",
+            "totale": 13176
+        },
+        {
+            "nome": "EGO-PACK SRL",
+            "totale": 11309
+        },
+        {
+            "nome": "GMG PRESS SRL",
+            "totale": 9682
+        },
+        {
+            "nome": "MAZZONI SERVIZI SRL",
+            "totale": 8533
+        },
+        {
+            "nome": "EUROPACK SOCIETA' COOPERATIVA",
+            "totale": 7344
+        }
+    ]
 }
